@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>{{ page.title }}</h2>
+
+    {#
+    <h2 class="no-bottom-margin">{{ page.title.upper() }}</h2>
+#}
+    <h5>{{ page.subtitle }}</h5>
+
     {{ page.html|safe }}
+
 {% endblock content %}
