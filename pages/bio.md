@@ -20,6 +20,5 @@ la vita di qualcuno**.
 
 La mia citazione preferita è:
 
-<h2 class="quote">"Che uomo è un uomo che non fa del proprio meglio per migliorare il mondo?"</h2>
+<h2 class="quote">"Nemo vir est qui mundum non reddat meliorem"</h2>
 <p class="quote-from"><em>Le crociate - Kingdom of Heaven</em></p>
-
