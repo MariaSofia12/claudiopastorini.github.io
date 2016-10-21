@@ -2,17 +2,120 @@
 
 {% block content %}
 
-    <h2>{{ pages.get('bio').subtitle.upper() }}</h2>
+    <h5>I miei lavori</h5>
 
-    <h2>List of stuff</h2>
-    <ul>
-        {% for page in pages %}
-            <li>
-                <a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
-            </li>
+    <p><strong>Sviluppo principalmente per Android</strong> ma non disprezzo anche altre piattaforme o linguaggi: mi
+        adatto
+        alla situazione che devo affrontare cercando di non demordere anche se ho davanti un framework come
+        <del><a href="http://www.joomla.it/" target="_blank">Joomla</a></del>
+        ...
+    </p>
+
+    <p>I progetti qui presentati sono tutti progetti <strong>realizzati da me (o almeno in parte)</strong> e comprendono
+        <strong>anche progetti universitari</strong>.</p>
+
+    <div class="portfolio-section">
+        <h6 class="portfolio-title">Android apps</h6>
+        <p>Sviluppo app per <strong>Android dal 2013</strong>, quindi mi sento <strong>padrone della
+            piattaforma</strong>
+            e sono sempre alla <strong>ricerca</strong> di nuovi pattern architetturali e tecniche <strong>per
+                migliorarmi sempre di più</strong>.</p>
+
+        <p>Da sempre il mio obiettivo è sviluppare <strong>app belle e intuitive</strong> cercando di carpire,
+            anche se <strong>non sono un designer</strong>, il meglio dell'<em>UI</em> e dell'<em>UX</em> del momento.
+        </p>
+
+        {% for page in pages if page.type == "android_app" %}
+            {% if loop.index is divisibleby 2 %}
+                <div class="portfolio right-column">
+            {% else %}
+                <div class="portfolio left-column">
+            {% endif %}
+        <a href="{{ url_for("page", path=page.path) }}">
+            <div class="portfolio-screenshot-wrapper"><img
+                    src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
+        </a>
+        </div>
         {% else %}
-            <li>No stuff.</li>
+            <p>No stuff.</p>
         {% endfor %}
-    </ul>
+        </div>
+
+        <div class="portfolio-section">
+            <h6 class="portfolio-title">Pebble apps</h6>
+            <p>La parola wearable è sulla bocca di tutti, ma questi device ancora non sono sul corpo di tutti.</p>
+            <p><a href="https://www.pebble.com/" target="_blank">Pebble</a> è stato il primo smartwatch
+                presente sul mercato e, con la sua <strong>semplicità e la sua longevità</strong>, riesce ad essere una
+                buona
+                alternativa ai più blasonati Android e Apple smartwatch. Per questo motivo, ho deciso di acquistarlo e
+                ne sono più che
+                soddisfatto!</p>
+
+            {% for page in pages if page.type == "pebble_app" %}
+                {% if loop.index is divisibleby 2 %}
+                    <div class="portfolio right-column">
+                {% else %}
+                    <div class="portfolio left-column">
+                {% endif %}
+            <a href="{{ url_for("page", path=page.path) }}">
+                <div class="portfolio-screenshot-wrapper"><img
+                        src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
+            </a>
+            </div>
+            {% else %}
+                <p>No stuff.</p>
+            {% endfor %}
+            </div>
+
+            <div class="portfolio-section">
+                <h6 class="portfolio-title">Web apps</h6>
+                <p><strong>Non amo sviluppare per il web</strong> (sono un <strong>tipo più da backend</strong>, ecco):
+                    io e l'HTML non riusciamo a stare insieme per
+                    troppe ore ma per necessità ho dovuto rimboccarmi le maniche e studiare anche un po' di
+                    <em>HTML</em>, <em>CSS</em> e <em>JS</em>.</p>
+
+                {% for page in pages if page.type == "web_app" %}
+                    {% if loop.index is divisibleby 2 %}
+                        <div class="portfolio right-column">
+                    {% else %}
+                        <div class="portfolio left-column">
+                    {% endif %}
+                <a href="{{ url_for("page", path=page.path) }}">
+                    <div class="portfolio-screenshot-wrapper"><img
+                            src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
+                </a>
+                </div>
+                {% else %}
+                    <p>No stuff.</p>
+                {% endfor %}
+                </div>
+
+                <div class="portfolio-section">
+                    <h6 class="portfolio-title">Laptops apps</h6>
+                    <p>Sviluppare laptop app oramai è <strong>desueto</strong>... Al giorno d'oggi, gli <strong>utenti
+                        accedono ai
+                        servizi</strong> offerti dalle società o <strong>tramite browser o tramite app</strong>.
+                        Alcune applicazioni <strong>non hanno più senso di esistere</strong> come <strong>applicazioni
+                            standalone</strong> dato l'enorme diffusione dei <em>dispositivi mobili</em>
+                        e del cosidetto <em>cloud</em>.</p>
+                    <p>Sviluppo sopratutto in <em>Java</em> e in <em>Python</em> con meno UI possibile (per non parlare
+                        del temibile ma
+                        amato <em>C</em>, ancora arma vincente per molti problemi).</p>
+
+                    {% for page in pages if page.type == "laptop_app" %}
+                        {% if loop.index is divisibleby 2 %}
+                            <div class="portfolio right-column">
+                        {% else %}
+                            <div class="portfolio left-column">
+                        {% endif %}
+                    <a href="{{ url_for("page", path=page.path) }}">
+                        <div class="portfolio-screenshot-wrapper"><img
+                                src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
+                    </a>
+                    </div>
+                    {% else %}
+                        <p>No stuff.</p>
+                    {% endfor %}
+                    </div>
 
 {% endblock content %}
