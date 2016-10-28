@@ -1,6 +1,7 @@
 import sys
 
 from flask import Flask, render_template
+from flask import redirect
 from flask_flatpages import FlatPages, flatpages
 from flask_frozen import Freezer
 
@@ -16,10 +17,13 @@ freezer = Freezer(app)
 
 
 @app.route('/')
-@app.route('/bio/')
 def index():
-    return render_template('bio.html', pages=pages)
+    return redirect("bio", code=302)
 
+
+@app.route('/bio/')
+def bio():
+    return render_template('bio.html', pages=pages)
 
 @app.route('/portfolio/')
 def portfolio():
