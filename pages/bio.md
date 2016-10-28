@@ -5,12 +5,12 @@ banner:
 Mi chiamo **Claudio Pastorini**, ho 23 anni e vivo a Zagarolo, a pochi km 
 da **Roma**.
 
-Sono un giovane **sviluppatore**, che si sente particolarmente dedito ad
-**Android** ma che non disgusta anche altri linguaggi o altri contesti 
-che si considera molto **flessibile** e sempre **pronto ad imparare**. 
+Sono un giovane **sviluppatore**, mi sento particolarmente dedito ad
+**Android** (ma non disgusto anche altri linguaggi o altri contesti) e
+mi reputo molto **flessibile** e sempre **pronto ad imparare**. 
 
-Da quando ho conosciuto **Linux** mi interesso sempre di più al 
-Free/Libre Open Source Software (**FLOSS**) e alla sua filosofia che si 
+Da quando ho conosciuto **Linux**, mi interesso sempre di più al 
+Free/Libre Open Source Software (**FLOSS**) e alla sua filosofia, che si 
 discosta molto da quella che la maggior parte della persone conosce (<del>Windows</del>). 
 
 Mi sento **ingegnere** e l'aver conseguito una **laurea triennale 
