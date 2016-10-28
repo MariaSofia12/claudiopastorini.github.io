@@ -7,7 +7,8 @@ source_code: https://github.com/PRIMETIME4U/PRIMETIME4U-baseclient https://githu
 license: 
 date: 1420848000
 
-Durante l'anno accademico 2014/2015, ho preso parte al **workshop [Google Technologies for Cloud and Web Development - Rome](https://sites.google.com/a/dis.uniroma1.it/google-technologies-for-cloud-and-web-development/)** 
+Durante l'anno accademico 2014/2015, ho preso parte al **workshop
+[Google Technologies for Cloud and Web Development - Rome](https://sites.google.com/a/dis.uniroma1.it/google-technologies-for-cloud-and-web-development/)** 
 organizzato da **Google Tel Aviv** in collaborazione con l'università 
 **La Sapienza di Roma**.
 
