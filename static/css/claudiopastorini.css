@@ -1,6 +1,10 @@
 /*
  * Custom
  */
+.site-footer {
+    margin-top: 3%;
+}
+
 .site-footer p {
     padding-top: 14px;
     border-top: 1px solid #ddd;
@@ -11,7 +15,11 @@
 }
 
 .no-bottom-margin {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+}
+
+.bottom-margin {
+    margin-bottom: 3%;
 }
 
 .quote {
@@ -27,24 +35,34 @@
 
 .content {
     margin-top: 3%;
-    margin-bottom: 7%;
 }
 
 .centered-text {
     text-align: center;
 }
 
+.container {
+    max-width: 720px;
+}
+
 .header {
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: justify;
 }
 
 /*
  * Navbar
  */
-.navbar + .docs-section {
-    border-top-width: 0;
-}
 
 .navbar,
 .navbar-spacer {
@@ -85,14 +103,10 @@
     color: #222;
 }
 
-.navbar-link.active {
-    color: #33C3F0;
-}
-
 /*
  * Footer
  */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     footer span:nth-of-type(3) {
         display: block;
     }
@@ -163,4 +177,80 @@ li[data-type="skype"] {
         line-height: 1rem;
         text-indent: 0.4em;
     }
+}
+
+.value-prop {
+    margin-top: 1rem;
+}
+
+img {
+    border: 0 initial initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+}
+
+.value-img {
+    display: block;
+    text-align: center;
+    margin: 2.5rem auto 0;
+}
+
+.value-props {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+}
+
+.portfolio {
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+@media (min-width: 1024px) {
+    .portfolio {
+        width: 350px;
+    }
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.right-column {
+    float: right;
+}
+
+.left-column {
+    float: left;
+}
+
+.portfolio-image-wrapper {
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(238, 238, 238);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    height: 154px;
+}
+
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-section {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.portfolio-title {
+    font-weight: bold;
+    text-transform: uppercase;
 }
