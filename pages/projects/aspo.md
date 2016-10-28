@@ -3,9 +3,9 @@ subtitle: Le nuove tecnologie a servizio dell'artigianato
 type: diy
 banner: aspo_banner.png
 url:
-source_code: https://github.com/claudiopastorini/EventideJoomlaTemplate
-license: MIT
-date: 1475798400
+source_code: 
+license:
+date: 1476576000
 
 Un **aspo** è una macchina che, a partire dai bozzoli dei bachi da seta, **dipana** l'intero filo
 di **seta**, che raggiunge addirittura una lunghezza superiore al km.
