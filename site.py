@@ -39,6 +39,12 @@ def contatti():
     page = pages.get_or_404("contatti")
     return render_template('page.html', page=page)
 
+
+@app.template_test("list")
+def is_list(value):
+    return isinstance(value, list)
+
+
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
