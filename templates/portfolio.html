@@ -32,8 +32,8 @@
                 <div class="portfolio left-column">
             {% endif %}
         <a href="{{ url_for("page", path=page.path) }}">
-            <div class="portfolio-screenshot-wrapper"><img
-                    src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
+            <div class="portfolio-image-wrapper"><img src="{{ url_for('static', filename = 'images/' + page.banner) }}">
+            </div>
         </a>
         </div>
         {% else %}
@@ -43,7 +43,8 @@
 
         <div class="portfolio-section">
             <h6 class="portfolio-title">Pebble apps</h6>
-            <p>La parola wearable è sulla bocca di tutti, ma questi device ancora non sono sul corpo di tutti.</p>
+            <p>La parola <strong>wearable</strong> è sulla bocca di tutti, ma questi device ancora non sono sul corpo di
+                tutti.</p>
             <p><a href="https://www.pebble.com/" target="_blank">Pebble</a> è stato il primo smartwatch
                 presente sul mercato e, con la sua <strong>semplicità e la sua longevità</strong>, riesce ad essere una
                 buona
@@ -58,7 +59,7 @@
                     <div class="portfolio left-column">
                 {% endif %}
             <a href="{{ url_for("page", path=page.path) }}">
-                <div class="portfolio-screenshot-wrapper"><img
+                <div class="portfolio-image-wrapper"><img
                         src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
             </a>
             </div>
@@ -70,18 +71,21 @@
             <div class="portfolio-section">
                 <h6 class="portfolio-title">Web apps</h6>
                 <p><strong>Non amo sviluppare per il web</strong> (sono un <strong>tipo più da backend</strong>, ecco):
-                    io e l'HTML non riusciamo a stare insieme per
-                    troppe ore ma per necessità ho dovuto rimboccarmi le maniche e studiare anche un po' di
-                    <em>HTML</em>, <em>CSS</em> e <em>JS</em>.</p>
+                    io e
+                    l'HTML non riusciamo a stare insieme per troppe ore ma per necessità ho dovuto rimboccarmi le
+                    maniche e
+                    studiare anche un po' di <em>HTML</em>, <em>CSS</em> e <em>JS</em> oltre a <em>PHP</em>,
+                    <em>Java</em> e
+                    <em>Python</em> (il mio preferito).</p>
 
                 {% for page in pages if page.type == "web_app" %}
                     {% if loop.index is divisibleby 2 %}
                         <div class="portfolio right-column">
-                    {% else %}
+            {% else %}
                         <div class="portfolio left-column">
                     {% endif %}
                 <a href="{{ url_for("page", path=page.path) }}">
-                    <div class="portfolio-screenshot-wrapper"><img
+                    <div class="portfolio-image-wrapper"><img
                             src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
                 </a>
                 </div>
@@ -90,32 +94,89 @@
                 {% endfor %}
                 </div>
 
-                <div class="portfolio-section">
-                    <h6 class="portfolio-title">Laptops apps</h6>
-                    <p>Sviluppare laptop app oramai è <strong>desueto</strong>... Al giorno d'oggi, gli <strong>utenti
-                        accedono ai
-                        servizi</strong> offerti dalle società o <strong>tramite browser o tramite app</strong>.
-                        Alcune applicazioni <strong>non hanno più senso di esistere</strong> come <strong>applicazioni
-                            standalone</strong> dato l'enorme diffusione dei <em>dispositivi mobili</em>
-                        e del cosidetto <em>cloud</em>.</p>
-                    <p>Sviluppo sopratutto in <em>Java</em> e in <em>Python</em> con meno UI possibile (per non parlare
-                        del temibile ma
-                        amato <em>C</em>, ancora arma vincente per molti problemi).</p>
+                {#<div class="portfolio-section">
+        <h6 class="portfolio-title">Laptops apps</h6>
+        <p>Sviluppare laptop app oramai è <strong>desueto</strong>... Al giorno d'oggi, gli <strong>utenti accedono ai
+            servizi</strong> offerti dalle soc o <strong>via browser o via app</strong>.
+            Alcune applicazioni <strong>non hanno più senso di esistere</strong> come <strong>applicazioni standalone</strong> dato l'enorme diffusione dei <em>dispositivi mobili</em>
+            e del cosidetto <em>cloud</em>.</p>
+        <p>Sviluppo sopratutto in <em>Java</em> e in <em>Python</em> con meno UI possibile (per non parlare del temibile ma
+            amato <em>C</em>, ancora arma vincente per molti problemi).</p>
 
-                    {% for page in pages if page.type == "laptop_app" %}
+        {% for page in pages if page.type == "laptop_app" %}
+            {% if loop.index is divisibleby 2 %}
+                <div class="portfolio right-column">
+            {% else %}
+                <div class="portfolio left-column">
+            {% endif %}
+                    <a href="{{ url_for("page", path=page.path) }}"><div class="portfolio-image-wrapper"><img src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div></a>
+                </div>
+        {% else %}
+            <p>No stuff.</p>
+        {% endfor %}
+    </div>#}
+
+                <div class="portfolio-section">
+                    <h6 class="portfolio-title">DIY</h6>
+                    <p>Non sapevo come catalogare questo tipo di lavori che comportano l'utilizzo di nuove tecnologie
+                        come <strong>
+                            Arduino</strong>, <strong>Raspberry Pi</strong> e in generale l'<strong>IoT</strong>, quindi
+                        l'ho chiamata
+                        semplicemente DIY, <strong>Do It Yourself</strong>.</p>
+
+                    <p>Durante questi ultimi anni si è visto emergere sempre di più il cosidetto <strong>movimento
+                        Maker</strong>, che potrebbe essere
+                        visto, a mio avviso, come una rinascita dell'elettronica per appassionati (come lo sono stati i
+                        due giovani
+                        Steve: Jobs e Wozniak) che tramite un budget limitato, qualche componente riciclato e qualche
+                        guida riuscivano
+                        a creare da piccoli apperecchi elettronici, fino a piccoli computer.</p>
+
+                    {% for page in pages if page.type == "diy" %}
                         {% if loop.index is divisibleby 2 %}
                             <div class="portfolio right-column">
                         {% else %}
                             <div class="portfolio left-column">
                         {% endif %}
                     <a href="{{ url_for("page", path=page.path) }}">
-                        <div class="portfolio-screenshot-wrapper"><img
+                        <div class="portfolio-image-wrapper"><img
                                 src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
                     </a>
-                    </div>
+                </div>
                     {% else %}
                         <p>No stuff.</p>
                     {% endfor %}
                     </div>
+
+                    <div class="portfolio-section">
+                        <h6 class="portfolio-title">Progetti universitari</h6>
+                        <p>Durante il mio percorso accademico di laurea trieannale in <strong>Ingegneria Informatica -
+                            Sistemi Software e
+                            web</strong> all'università di <strong>Roma Tor Vergata</strong>, ho dovuto in vari corsi
+                            realizzare progetti
+                            finali di gruppo.</p>
+
+                        <p>Queste esperienze hanno accresciuto in me una predisposizione al <strong>lavoro in
+                            team</strong> e alla
+                            <strong>leadership</strong>, oltre all'apprendimento di una serie di servizi e tecnologie
+                            utili al lavoro di
+                            gruppo, come <strong>Git</strong>, <strong>GitHub</strong>, <strong>Slack</strong>, <strong>Trello</strong>,
+                            etc...</p>
+
+                        {% for page in pages if page.type == "university" %}
+                            {% if loop.index is divisibleby 2 %}
+                                <div class="portfolio right-column">
+                            {% else %}
+                                <div class="portfolio left-column">
+                            {% endif %}
+                        <a href="{{ url_for("page", path=page.path) }}">
+                            <div class="portfolio-image-wrapper"><img
+                                    src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
+                        </a>
+                        </div>
+                        {% else %}
+                            <p>No stuff.</p>
+                        {% endfor %}
+                        </div>
 
 {% endblock content %}
