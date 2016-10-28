@@ -1,7 +1,7 @@
 import sys
 
 from flask import Flask, render_template
-from flask_flatpages import FlatPages
+from flask_flatpages import FlatPages, flatpages
 from flask_frozen import Freezer
 
 DEBUG = True
@@ -23,13 +23,15 @@ def index():
 
 @app.route('/portfolio/')
 def portfolio():
-    return render_template('portfolio.html', pages=pages)
+    projects = (p for p in pages if 'date' in p.meta)
+    projects = sorted(projects, reverse=True, key=lambda p: p.meta['date'])
+    return render_template('portfolio.html', pages=projects)
 
 
 @app.route('/portfolio/<path:path>/')
 def page(path):
     page = pages.get_or_404(path)
-    return render_template('page.html', page=page)
+    return render_template('project.html', page=page)
 
 
 @app.route('/contatti/')
