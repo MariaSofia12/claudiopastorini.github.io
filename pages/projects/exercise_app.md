@@ -1,6 +1,6 @@
-title: App di esercizio
+title: Apps di esercizio
 subtitle: Apps per il corso di Mobile Programming
-type: android_app
+type: university
 banner: exercise_app_banner.png
 url:
 source_code: https://github.com/claudiopastorini/RomanNumerals https://github.com/claudiopastorini/FiscalCode https://github.com/claudiopastorini/BarGino https://github.com/claudiopastorini/PrimeCalculator 
@@ -11,8 +11,8 @@ Durante il **corso di Mobile Programming** tenuto dal prof. Massimo Regoli duran
 accademico **2014/2015**, è stato richiesto di realizzare varie app di 
 esercitazione.
 
-**Non essendo a digiuno** nello sviluppo di applicazioni Android, ho certcato di mettere ordine alla mia preparazione non accademica in materia,
-**concentrandomi** in particolare negli **aspetti che non avevo mai trattato**.
+**Non essendo a digiuno** nello sviluppo di applicazioni Android, ho cercato di mettere ordine alla mia preparazione non accademica in materia,
+**concentrandomi** in particolare sugli **aspetti che non avevo mai trattato**.
 
 
 Mostro qui alcune applicazioni realizzate, ad esempio:
