@@ -11,13 +11,14 @@ Durante il **corso di Mobile Programming** tenuto dal prof. Massimo Regoli duran
 accademico **2014/2015**, è stato richiesto di realizzare varie app di 
 esercitazione.
 
-**Non essendo a digiuno** nello sviluppo di applicazioni Android, ho cercato di mettere ordine alla mia preparazione non accademica in materia,
+**Non essendo digiuno** dello sviluppo di applicazioni Android, ho cercato 
+di mettere ordine alla mia preparazione non accademica in materia,
 **concentrandomi** in particolare sugli **aspetti che non avevo mai trattato**.
 
 
 Mostro qui alcune applicazioni realizzate, ad esempio:
 
-+   ***BarGino*** - applicazione che permette di "prenotare" un caffè al bar,
++   ***BarGino*** - applicazione che permette di "ordinare" un caffè al bar,
  realizzata seguendo le direttive del Material Design e prestando particolare
   attenzione al **comportamento del device con il cambiamento di orientazione**
 +   ***PrimeCalculator*** - applicazione che permette di calcolare numeri
@@ -30,4 +31,4 @@ conoscenza dei codici catastali
 numero romano in un numero arabo e viceversa, creando un **componente 
 visuale custom**
 
-L'app [WorkApp](../../../portfolio/workapp/) è stata realizzata come progetto finale di gruppo.
+L'app [WorkApp](/portfolio/workapp/) è stata realizzata come progetto finale di gruppo.

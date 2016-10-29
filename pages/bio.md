@@ -14,7 +14,7 @@ Free/Libre Open Source Software (**FLOSS**) e alla sua filosofia, che si
 discosta molto da quella che la maggior parte della persone conosce (<del>Windows</del>). 
 
 Mi sento **ingegnere** e l'aver conseguito una **laurea triennale 
-in Ingegneria Informatica** all'Università di **Roma Tor Vergata**, ne è stata
+in Ingegneria Informatica** all'Università di **Roma Tor Vergata** ne è stata
 solo la conferma. Adoro il **problem solving** e 
 la creazione di nuovi servizi e sistemi che hanno lo scopo di **migliorare
 la vita**.

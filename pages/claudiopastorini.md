@@ -13,15 +13,18 @@ un sito che mostri il mio modo di lavorare?
 Questo progetto nasce dall'esigenza di avere un **sito personale facilmente 
 aggiornabile** che contenga i miei **lavori** e i miei **contatti**.
 
-Al giorno d'oggi, **creare un sito da zero** è considerato inutile e anche io sono di questo parere,
-ma ho comunque preferito non usare un framework come [WordPress](https://wordpress.com/) perché la mia intenzione
-era quella di trovare qualcosa di veramente facile e semplice da usare e mantenere e magari 
+Al giorno d'oggi, **creare un sito da zero** è poco raccomandabile,
+ma ho comunque preferito evitare di utilizzare un framework come [WordPress](https://wordpress.com/) perché la mia intenzione
+era quella di trovare qualcosa di veramente facile da usare, mantenere e, magari, 
 anche a costo zero. Proprio per questo, il mio sito personale si trova
 su [GitHub Pages](https://pages.github.com/) e usa **pagine statiche autogenerate** da
 [Frozen-Flask](http://pythonhosted.org/Frozen-Flask/), scritte tramite [Markdown](https://it.wikipedia.org/wiki/Markdown)
 grazie a [Flask Flat Pages](https://pythonhosted.org/Flask-FlatPages/).
-Quindi, mi basta scrivere del semplice testo con un po' di markup, un po' di caratteri speciali e 
-il gioco è fatto. Per quanto riguarda la grafica, invece, mi sono basato su un semplicissimo framework CSS di nome [Skeleton](http://getskeleton.com/),
-che permette la realizzazione di un sito responsive con un foglio di stile di sole 600 righe.
+Quindi, è necessario scrivere un testo con del markup e si è già pronti 
+alla pubblicazione. Per quanto riguarda la grafica, invece, mi sono basato 
+su un leggerissimo framework CSS di nome [Skeleton](http://getskeleton.com/),
+che permette la realizzazione di un sito responsive con un stylesheet di
+ sole 400 righe.
 
-**Semplicità e pulizia** sono ciò che voglio mostrare di me, attraverso questo sito che mi rappresenta.
+**Semplicità e pulizia** sono ciò che voglio mostrare di me, attraverso 
+questo sito che mi rappresenta.

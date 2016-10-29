@@ -12,13 +12,13 @@ Sono uno **sviluppatore** pendolare, quindi, se un servizio non c'è
 
 Questo è ciò che mi sono detto quando, qualche anno fa, ho presentato ai miei amici e colleghi 
 di studio *Alessio Moretti*, *Andrea Cerra*, *Andrea Monti* e *Federico Vagnoni* 
-l'idea di realizzazione di un'applicazione per poter **viaggiare in modo 
-smart con i bus Cotral**. I dati c'erano, le menti anche.. serviva solo un 
+l'idea di realizzare un'applicazione per poter **viaggiare in modo 
+smart con i bus Cotral**. I dati c'erano, le menti anche... serviva solo un 
 po' di codice.
 
-L'app permetteva di **organizzare un viaggio**, scegliendo luogo di partenza e 
-luogo di arrivo, **monitorare le corse in tempo reale**, **calcolare** la 
-**tariffa** adeguata per il proprio viaggio e consultare i PDF
+L'app permetteva di **organizzare** un viaggio, scegliendo luogo di partenza e 
+luogo di arrivo, **monitorare** le corse in tempo reale, **calcolare** la 
+tariffa adeguata per il proprio viaggio e **consultare** i PDF
 contenenti tutti gli orari.
 
 L'idea ha avuto **molto successo** e, anche **senza fare pubblicità**, abbiamo raggiunto circa 15k utenti totali su

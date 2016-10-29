@@ -15,5 +15,5 @@ gestione, da parte di locatari, e per la prenotazione, da parte dei clienti, di 
 
 La tematica centrale delle lezioni è stata il processo di sviluppo software **RUP** (Rational Unified Process):
 utilizzando il linguaggio **Java** e coadiuvati da software come **StarUML**, abbiamo progettato
-una web app in JSP e una laptop app in **JAVA FX**, che poi abbiamo realizzato, tramite l'ausilio
+una web app in **JSP** e una laptop app in **JAVA FX**, che poi abbiamo realizzato, tramite l'ausilio
 di framework e librerie come **JPA**, **bootstrap** e **jQuery**.

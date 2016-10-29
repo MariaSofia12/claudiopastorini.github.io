@@ -13,12 +13,12 @@ di coding incentranta, in questo caso, sullo sviluppo di soluzioni per lo spazio
 Era **[Space Apps 2014](https://2014.spaceappschallenge.org/)** e io e 
 il mio team [Chronos](https://2014.spaceappschallenge.org/project/chronos/) 
 siamo arrivati **secondi alla competizione nazionale** e in finale a quella 
-internazionele.
+internazionale.
 
-La somma di denaro che abbiamo vinto è stata utilizzata da una parte del 
-gruppo per sviluppare l'idea, che ci aveva fatto sfiorare la vittoria 
+La somma di denaro che abbiamo ricevuto è stata utilizzata da una parte del 
+gruppo per sviluppare l'idea che ci aveva fatto sfiorare la vittoria 
 internazionale: hanno **creato una società** e nel 2015 mi hanno ricontattato 
-per tornare a far parte del team dato che, dopo aver fatto approvare 
+per tornare a far parte del team dato che, dopo aver fatto approvare il
 business plan e aver trovato i fondi necessari, avevano bisogno di un developer.
 
 L'università e gli esami, però, non mi avrebbero permesso di dedicarmi 
