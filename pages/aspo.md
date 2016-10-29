@@ -2,7 +2,7 @@ title: Aspo per la trattura della seta
 subtitle: Le nuove tecnologie a servizio dell'artigianato
 type: diy
 banner: aspo_banner.png
-url:
+url: http://explore.makerfairerome.eu/poi/Exhibit_833
 source_code: 
 license:
 date: 1476576000
@@ -16,14 +16,15 @@ sfruttando le nuove tecnologie a disposizione, come Arduino, il taglio laser
 e le stampanti 3D.
 
 In poco meno di 3 mesi, siamo riusciti a completare la macchina e l'abbiamo 
-mostrata alla [**Maker Faire** di Roma](http://www.makerfairerome.eu/it/), importante evento nazionale per i Maker 
-nostrani ed europei, in quanto è una delle maggiori fiere del settore in Europa.
+mostrata alla [**Maker Faire** di Roma](http://www.makerfairerome.eu/it/), 
+importante evento nazionale per i Maker nostrani ed europei, 
+in quanto è una delle maggiori fiere del settore in Europa.
 Siamo riusciti a meravigliare tutti, dai più piccoli ai più anziani, grazie alla bellezza 
 della nostra macchina completamente in plexiglass e alla dimostrazione di come una macchina 
 molto semplice possa produrre la seta, materiale molto pregiato e costoso.
 
 Io **mi sono occupato principalmente** della **parte elettronica** e della 
-**programmazione di [Arduino](arduino.cc)**, in particolare un Arduino UNO e un 
+**programmazione di [Arduino](https://www.arduino.cc)**, in particolare un Arduino UNO e un 
 Arduino MEGA. Il primo stampa su un **LCD** la lunghezza del filo dipanato in tempo reale,
 il secondo controlla due **motori**, di cui uno mette in movimento la ruota su cui è posto il filo e un altro dispone
 il filo in modo uniforme sulla struttura al fine di permettere un'adeguata asciugatura.

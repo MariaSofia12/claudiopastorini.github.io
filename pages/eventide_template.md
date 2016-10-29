@@ -20,8 +20,8 @@ po' di pazienza.
 Partendo dal template [Eventide](https://gumroad.com/l/free-one-page-event-html-css-template) 
 di [Matthew Hartman](http://matthewhartman.com.au/) ho **realizzato un template**
 e un **modulo per ogni sezione** del sito **per Joomla**, dall'header al footer. C'è ancora un 
-po' da lavorarci ma sto utilizzando già il template per il sito [**Inventa**](www.associazionesinergie.it/inventa), 
+po' da lavorarci ma sto utilizzando già il template per il sito [**Inventa**](http://www.associazionesinergie.it/inventa), 
 iniziativa dell'[Associazione di Promozione sociale **Sinergie**](http://www.associazionesinergie.it/) 
 con cui collaboro e con cui ho partecipato alla [**Maker Faire** di Roma](http://www.makerfairerome.eu/it/) 
-del 2016 portando un [Aspo](../../portfolio/aspo/) per la trattura della 
+del 2016 portando un [Aspo](../../../portfolio/aspo/) per la trattura della 
 seta.

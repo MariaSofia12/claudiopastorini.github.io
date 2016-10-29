@@ -3,7 +3,7 @@ subtitle: Apps per il corso di Mobile Programming
 type: university
 banner: exercise_app_banner.png
 url:
-source_code: https://github.com/claudiopastorini/RomanNumerals https://github.com/claudiopastorini/FiscalCode https://github.com/claudiopastorini/BarGino https://github.com/claudiopastorini/PrimeCalculator 
+source_code: https://github.com/claudiopastorini/BarGino https://github.com/claudiopastorini/PrimeCalculator https://github.com/claudiopastorini/FiscalCode https://github.com/claudiopastorini/RomanNumerals 
 license: MIT
 date: 1422748800
 
@@ -30,4 +30,4 @@ conoscenza dei codici catastali
 numero romano in un numero arabo e viceversa, creando un **componente 
 visuale custom**
 
-L'app [WorkApp](../../portfolio/workapp/) è stata realizzata come progetto finale di gruppo.
+L'app [WorkApp](../../../portfolio/workapp/) è stata realizzata come progetto finale di gruppo.
