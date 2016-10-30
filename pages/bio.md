@@ -1,6 +1,6 @@
 title: Bio
 subtitle: Ciao, mi presento!
-banner:
+banner: site_banner_color.jpg
 
 Mi chiamo **Claudio Pastorini**, ho 23 anni e vivo a Zagarolo, a pochi km 
 da **Roma**.

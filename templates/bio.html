@@ -2,10 +2,10 @@
 
 {% block content %}
 
-    {#
-    <h2 class="no-bottom-margin">{{ pages.get('bio').title.upper() }}</h2>
-#}
     <h5>{{ pages.get('bio').subtitle }}</h5>
+
+    <img class="banner bottom-margin u-max-full-width" alt="Claudio Pastorini" align="middle" src="{{ url_for('static',
+        filename = 'images/' + pages.get('bio').banner) }}">
 
     {{ pages.get('bio').html|safe }}
 
