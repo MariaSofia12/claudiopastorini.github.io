@@ -1,5 +1,5 @@
 title: XPLORATION READER
-subtitle: App Open Source per la visualizzazione dei dati dati raccolti da Chronos
+subtitle: App Open Source per la visualizzazione dei dati raccolti da Chronos
 type: android_app
 banner: xploration_banner.png
 url:
