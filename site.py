@@ -52,6 +52,8 @@ def is_list(value):
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
+        app.config['PREFERRED_URL_SCHEME'] = 'https'
+        app.config['SERVER_NAME'] = 'claudiopastorini.github.io'
         freezer.freeze()
     else:
         app.run(port=8080)

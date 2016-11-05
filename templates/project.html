@@ -7,8 +7,9 @@
     <meta property="og:title" content="{{ page.title }}"/>
     <meta property="og:description" content="{{ page.subtitle }}"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="{{ url_for('portfolio', _external=True) + page.path }}"/>
-    <meta property="og:image" content="{{ url_for('static', filename = 'images/' + page.banner, _external=True) }}"/>
+    <meta property="og:url" content="{{ url_for('portfolio', _external=True,  _scheme='https') + page.path }}"/>
+    <meta property="og:image"
+          content="{{ url_for('static', filename = 'images/' + page.banner, _external=True, _scheme='https') }}"/>
 
 {% endblock %}
 
