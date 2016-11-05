@@ -1,10 +1,28 @@
 {% extends "base.html" %}
 
+{% block ogmeta %}
+
+    {{ super() }}
+
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="{{ url_for('contatti', _external=True) }}"/>
+    <meta property="og:image"
+          content="{{ url_for('static', filename = 'signature/rounded_profile.png', _external=True) }}">
+    <meta property="og:image:width" content="160">
+    <meta property="og:image:height" content="160">
+    <meta property="og:image:type" content="image/png">
+    <meta property="profile:first_name" content="Claudio">
+    <meta property="profile:last_name" content="Pastorini">
+    <meta property="profile:gender" content="male">
+    <meta property="profile:username" content="pcx93">
+    <meta property="profile:username" content="pcx">
+    <meta property="profile:username" content="claudiopastorini">
+    <meta property="profile:username" content="scripto">
+
+{% endblock %}
+
 {% block content %}
 
-    {#
-    <h2 class="no-bottom-margin">{{ page.title.upper() }}</h2>
-#}
     <h5>{{ page.subtitle }}</h5>
 
     {{ page.html|safe }}

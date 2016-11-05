@@ -1,5 +1,21 @@
 {% extends "base.html" %}
 
+{% block ogmeta %}
+
+    {{ super() }}
+
+    <meta property="og:title" content="{{ pages.get('bio').title }}"/>
+    <meta property="og:description" content="{{ pages.get('bio').subtitle }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{ url_for('bio', _external=True) }}"/>
+    <meta property="og:image"
+          content="{{ url_for('static', filename = 'images/' + pages.get('bio').banner, _external=True) }}"/>
+    <meta property="og:image:width" content="2340">
+    <meta property="og:image:height" content="1276">
+    <meta property="og:image:type" content="image/jpg">
+
+{% endblock %}
+
 {% block content %}
 
     <h5>{{ pages.get('bio').subtitle }}</h5>
