@@ -10,7 +10,7 @@
     <!-- Portfolio -->
     <url>
         <loc>http://claudiopastorini.github.io/portfolio/</loc>
-        <lastmod></lastmod>
+        <lastmod>2016-11-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
@@ -38,15 +38,15 @@
         </url>
     
         <url>
-            <loc>http://claudiopastorini.github.io/portfolio/eventide_template/</loc>
-            <lastmod>2016-10-29</lastmod>
+            <loc>http://claudiopastorini.github.io/portfolio/eventide-template/</loc>
+            <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
         </url>
     
         <url>
-            <loc>http://claudiopastorini.github.io/portfolio/exercise_app/</loc>
-            <lastmod>2016-10-29</lastmod>
+            <loc>http://claudiopastorini.github.io/portfolio/exercise-app/</loc>
+            <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
         </url>
@@ -101,8 +101,8 @@
         </url>
     
         <url>
-            <loc>http://claudiopastorini.github.io/portfolio/telegram_bot_api/</loc>
-            <lastmod>2016-10-29</lastmod>
+            <loc>http://claudiopastorini.github.io/portfolio/telegram-bot-api/</loc>
+            <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
         </url>
