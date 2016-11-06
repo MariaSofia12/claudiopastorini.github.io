@@ -38,7 +38,7 @@
             {% else %}
                 <div class="portfolio left-column">
             {% endif %}
-        <a href="{{ url_for("page", path=page.path) }}">
+        <a href="{{ url_for('portfolio', path=page.path) }}">
             <div class="portfolio-image-wrapper"><img src="{{ url_for('static', filename = 'images/' + page.banner) }}">
             </div>
         </a>
@@ -64,7 +64,7 @@
                 {% else %}
                     <div class="portfolio left-column">
                 {% endif %}
-            <a href="{{ url_for("page", path=page.path) }}">
+            <a href="{{ url_for('portfolio', path=page.path) }}">
                 <div class="portfolio-image-wrapper"><img
                         src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
             </a>
@@ -90,7 +90,7 @@
             {% else %}
                         <div class="portfolio left-column">
                     {% endif %}
-                <a href="{{ url_for("page", path=page.path) }}">
+                <a href="{{ url_for('portfolio', path=page.path) }}">
                     <div class="portfolio-image-wrapper"><img
                             src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
                 </a>
@@ -115,7 +115,7 @@
             {% else %}
                 <div class="portfolio left-column">
             {% endif %}
-                    <a href="{{ url_for("page", path=page.path) }}"><div class="portfolio-image-wrapper"><img src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div></a>
+                    <a href="{{ url_for('portfolio', path=page.path) }}"><div class="portfolio-image-wrapper"><img src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div></a>
                 </div>
         {% else %}
             <p>No stuff.</p>
@@ -144,7 +144,7 @@
                         {% else %}
                             <div class="portfolio left-column">
                         {% endif %}
-                    <a href="{{ url_for("page", path=page.path) }}">
+                    <a href="{{ url_for('portfolio', path=page.path) }}">
                         <div class="portfolio-image-wrapper"><img
                                 src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
                     </a>
@@ -175,7 +175,7 @@
                             {% else %}
                                 <div class="portfolio left-column">
                             {% endif %}
-                        <a href="{{ url_for("page", path=page.path) }}">
+                        <a href="{{ url_for('portfolio', path=page.path) }}">
                             <div class="portfolio-image-wrapper"><img
                                     src="{{ url_for('static', filename = 'images/' + page.banner) }}"></div>
                         </a>
