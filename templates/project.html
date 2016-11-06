@@ -27,7 +27,8 @@
 
     <div class="bottom-margin">
         <img class="banner u-max-full-width" align="middle"
-             src="{{ url_for('static', filename = 'images/' + project.banner) }}">
+             src="{{ url_for('static', filename = 'images/' + project.banner) }}"
+             alt="Banner per il progetto: {{ project.title|lower }} " title="{{ project.title }}">
     </div>
 
     <div class="value-props row">

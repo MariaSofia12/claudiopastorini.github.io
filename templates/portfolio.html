@@ -33,21 +33,22 @@
         {{ section.html|safe }}
 
         {% for project in projects if project.type == section.slug %}
-                {% if loop.index is divisibleby 2 %}
-                    <div class="portfolio right-column">
-                {% else %}
-                    <div class="portfolio left-column">
-                {% endif %}
+            {% if loop.index is divisibleby 2 %}
+                <div class="portfolio right-column">
+            {% else %}
+                <div class="portfolio left-column">
+            {% endif %}
         <a href="{{ url_for('project', path=project.path) }}">
             <div class="portfolio-image-wrapper">
-                <img src="{{ url_for('static', filename = 'images/' + project.banner) }}">
+                <img src="{{ url_for('static', filename = 'images/' + project.banner) }}"
+                     alt="Banner per il progetto: {{ project.title }} " title="{{ project.title }}">
             </div>
-            </a>
-            </div>
-            {% else %}
-                <p>No stuff.</p>
-            {% endfor %}
-            </div>
+        </a>
+        </div>
+        {% else %}
+            <p>No stuff.</p>
+        {% endfor %}
+    </div>
 
     {% endfor %}
 

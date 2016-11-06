@@ -28,7 +28,8 @@
 
     <h5>{{ bio.subtitle }}</h5>
 
-    <img class="banner bottom-margin u-max-full-width" alt="Claudio Pastorini" align="middle" src="{{ url_for('static',
+    <img class="banner bottom-margin u-max-full-width" title="Claudio Pastorini, sviluppatore Android"
+         alt="Foto con Claudio Pastorini, sviluppatore Android" align="middle" src="{{ url_for('static',
         filename = 'images/' + bio.banner) }}">
 
     {{ bio.html|safe }}
