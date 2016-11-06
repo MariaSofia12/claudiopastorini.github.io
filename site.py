@@ -5,6 +5,7 @@ import subprocess
 from flask import Flask, render_template
 from flask import make_response
 from flask import redirect
+from flask import url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
@@ -48,8 +49,11 @@ def contatti():
 
 
 @app.route('/robots.txt')
-def static_file():
-    return app.send_static_file('robots.txt')
+def robots():
+    robots_txt = 'User-agent: *\nDisallow: /static/\nSitemap: ' + url_for('sitemaps', _external=True)
+    response = make_response(robots_txt)
+    response.headers["Content-Type"] = "text/plain"
+    return response
 
 
 @app.route('/sitemaps.xml')
