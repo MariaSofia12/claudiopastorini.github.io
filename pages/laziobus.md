@@ -2,7 +2,7 @@ title: LazioBus
 subtitle: L'app (non ufficiale) più amata dai pendolari Cotral
 type: android_app
 banner: laziobus_banner.png
-url: https://play.google.com/store/apps/details?id=it.scripto.laziobus.lite
+url: http://www.laziobus.it/
 source_code:
 license:
 date: 1402444800
