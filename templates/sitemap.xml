@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Bio -->
+    <url>
+        <loc>{{ url_for('bio', _external=True) }}</loc>
+        <lastmod>{{ bio_time }}</lastmod>
+        <changefreq>montly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Portfolio -->
+    <url>
+        <loc>{{ url_for('portfolio', _external=True) }}</loc>
+        <lastmod>{{ portoflio_time }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Contatti -->
+    <url>
+        <loc>{{ url_for('contatti', _external=True) }}</loc>
+        <lastmod>{{ contatti_time }}</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Projects -->
+    {% for time_and_page in times_and_pages %}
+        <url>
+            <loc>{{ url_for('project', path=time_and_page[1], _external=True) }}</loc>
+            <lastmod>{{ time_and_page[0] }}</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    {% endfor %}
+</urlset>
