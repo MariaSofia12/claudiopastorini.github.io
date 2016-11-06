@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <!-- Bio -->
     <url>
         <loc>{{ url_for('bio', _external=True) }}</loc>
         <lastmod>{{ bio_time }}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
+        <image:image>
+            <image:loc>{{ url_for('static', filename = 'images/claudio_pastorini_banner_color.jpg', _external=True) }}</image:loc>
+            <image:title>Claudio Pastorini, sviluppatore Android</image:title>
+            <image:caption>Foto con Claudio Pastorini, sviluppatore Android</image:caption>
+            <image:geo_location>Parco Aldo Moro, Via Mura dei Francesi, 00043 Ciampino RM, Italy</image:geo_location>
+        </image:image>
     </url>
     <!-- Portfolio -->
     <url>
@@ -13,6 +20,13 @@
         <lastmod>{{ portfolio_time }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        {% for time_and_page in times_and_pages %}
+            <image:image>
+                <image:loc>{{ url_for('static', filename = 'images/' + time_and_page[1].banner, _external=True) }}</image:loc>
+                <image:caption>Banner per il progetto: {{ time_and_page[1].title }}</image:caption>
+                <image:title>{{ time_and_page[1].title }}</image:title>
+            </image:image>
+        {% endfor %}
     </url>
     <!-- Contatti -->
     <url>
@@ -22,9 +36,14 @@
         <priority>1</priority>
     </url>
     <!-- Projects -->
-    {% for time_and_page in times_and_pages %}
+    {% for time_and_page in times_and_pages1 %}
         <url>
-            <loc>{{ url_for('project', path=time_and_page[1], _external=True) }}</loc>
+            <loc>{{ url_for('project', path=time_and_page[1].path, _external=True) }}</loc>
+            <image:image>
+                <image:loc>{{ url_for('static', filename = 'images/' + time_and_page[1].banner, _external=True) }}</image:loc>
+                <image:caption>Banner per il progetto: {{ time_and_page[1].title }}</image:caption>
+                <image:title>{{ time_and_page[1].title }}</image:title>
+            </image:image>
             <lastmod>{{ time_and_page[0] }}</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>

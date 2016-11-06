@@ -70,10 +70,10 @@ def sitemaps():
     proc = subprocess.Popen('./last_modified_pages_times.sh', stdout=subprocess.PIPE)
     times = (proc.stdout.read().decode()).splitlines()
 
-    times_and_pages = [time[:-3].split(' pages/') for time in times]
+    times_and_names = [time[:-3].split(' pages/') for time in times]
 
     # Useful lambda for getting time for not project pages
-    get_time = lambda x: [(times_and_pages.pop(times_and_pages.index(time))[0]) for time in times_and_pages if
+    get_time = lambda x: [(times_and_names.pop(times_and_names.index(time))[0]) for time in times_and_names if
                           time[1] == x]
 
     # Gets time for bio, portfolio and contatti
@@ -82,10 +82,12 @@ def sitemaps():
     contatti_time = get_time('contatti')[0]
 
     # Removes times for not real pages
-    times_and_pages = (time_and_page for time_and_page in times_and_pages if '-portfolio' not in time_and_page[1])
+    times_and_pages = list(((time_and_name[0], pages.get(time_and_name[1])) for time_and_name in times_and_names if
+                            '-portfolio' not in time_and_name[1]))
 
     sitemap_xml = render_template('sitemap.xml', bio_time=bio_time, portfolio_time=portfolio_time,
-                                  contatti_time=contatti_time, times_and_pages=times_and_pages)
+                                  contatti_time=contatti_time, times_and_pages=times_and_pages,
+                                  times_and_pages1=times_and_pages)
     response = make_response(sitemap_xml)
     response.headers["Content-Type"] = "application/xml"
 
