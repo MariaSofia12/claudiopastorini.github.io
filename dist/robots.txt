@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /static/
+Sitemap: http://claudiopastorini.github.io/sitemaps.xml
