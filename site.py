@@ -58,7 +58,7 @@ def contatti():
 
 @app.route('/robots.txt')
 def robots():
-    robots_txt = 'User-agent: *\nDisallow: /static/\nSitemap: ' + url_for('sitemaps', _external=True)
+    robots_txt = 'User-agent: *\nDisallow: /signature/\nSitemap: ' + url_for('sitemaps', _external=True)
     response = make_response(robots_txt)
     response.headers["Content-Type"] = "text/plain"
     return response
