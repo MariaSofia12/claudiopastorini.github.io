@@ -1,9 +1,19 @@
 {% extends "base.html" %}
 
+{% block meta %}
+
+    <title>{{ page.title }} - Claudio Pastorini</title>
+    <meta name="description" content="{{ page.subtitle }}">
+
+{% endblock %}
+
 {% block ogmeta %}
 
     {{ super() }}
 
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.subtitle }}"/>
+    <meta property="og:type" content="article"/>
     <meta property="og:type" content="profile">
     <meta property="og:url" content="{{ url_for('contatti', _external=True) }}"/>
     <meta property="og:image"

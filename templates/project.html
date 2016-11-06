@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block meta %}
+
+    <title>{{ page.title }} - Claudio Pastorini</title>
+    <meta name="description" content="{{ page.subtitle }}">
+
+{% endblock %}
+
 {% block ogmeta %}
 
     {{ super() }}
