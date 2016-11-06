@@ -2,8 +2,8 @@
 
 {% block meta %}
 
-    <title>{{ page.title }} - Claudio Pastorini</title>
-    <meta name="description" content="{{ page.subtitle }}">
+    <title>{{ contatti.title }} - Claudio Pastorini</title>
+    <meta name="description" content="{{ contatti.subtitle }}">
 
 {% endblock %}
 
@@ -11,8 +11,8 @@
 
     {{ super() }}
 
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta property="og:description" content="{{ page.subtitle }}"/>
+    <meta property="og:title" content="{{ contatti.title }}"/>
+    <meta property="og:description" content="{{ contatti.subtitle }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:type" content="profile">
     <meta property="og:url" content="{{ url_for('contatti', _external=True) }}"/>
@@ -33,8 +33,8 @@
 
 {% block content %}
 
-    <h5>{{ page.subtitle }}</h5>
+    <h5>{{ contatti.subtitle }}</h5>
 
-    {{ page.html|safe }}
+    {{ contatti.html|safe }}
 
 {% endblock content %}

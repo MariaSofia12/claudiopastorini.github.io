@@ -3,8 +3,8 @@
 {% block meta %}
 
     <meta name="google-site-verification" content="IJiK-LS2ThwdodgTy2nrfSzNF66XOQA2H61IYIZXIIY"/>
-    <title>{{ pages.get('bio').title }} - Claudio Pastorini</title>
-    <meta name="description" content="{{ pages.get('bio').subtitle }}">
+    <title>{{ bio.title }} - Claudio Pastorini</title>
+    <meta name="description" content="{{ bio.subtitle }}">
 
 {% endblock %}
 
@@ -12,12 +12,12 @@
 
     {{ super() }}
 
-    <meta property="og:title" content="{{ pages.get('bio').title }}"/>
-    <meta property="og:description" content="{{ pages.get('bio').subtitle }}"/>
+    <meta property="og:title" content="{{ bio.title }}"/>
+    <meta property="og:description" content="{{ bio.subtitle }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="{{ url_for('bio', _external=True, _scheme='https') }}"/>
     <meta property="og:image"
-          content="{{ url_for('static', filename = 'images/' + pages.get('bio').banner, _external=True, _scheme='https') }}"/>
+          content="{{ url_for('static', filename = 'images/' + bio.banner, _external=True, _scheme='https') }}"/>
     <meta property="og:image:width" content="2340">
     <meta property="og:image:height" content="1276">
     <meta property="og:image:type" content="image/jpg">
@@ -26,11 +26,11 @@
 
 {% block content %}
 
-    <h5>{{ pages.get('bio').subtitle }}</h5>
+    <h5>{{ bio.subtitle }}</h5>
 
     <img class="banner bottom-margin u-max-full-width" alt="Claudio Pastorini" align="middle" src="{{ url_for('static',
-        filename = 'images/' + pages.get('bio').banner) }}">
+        filename = 'images/' + bio.banner) }}">
 
-    {{ pages.get('bio').html|safe }}
+    {{ bio.html|safe }}
 
 {% endblock content %}

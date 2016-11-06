@@ -2,8 +2,8 @@
 
 {% block meta %}
 
-    <title>{{ page.title }} - Claudio Pastorini</title>
-    <meta name="description" content="{{ page.subtitle }}">
+    <title>{{ project.title }} - Claudio Pastorini</title>
+    <meta name="description" content="{{ project.subtitle }}">
 
 {% endblock %}
 
@@ -11,39 +11,39 @@
 
     {{ super() }}
 
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta property="og:description" content="{{ page.subtitle }}"/>
+    <meta property="og:title" content="{{ project.title }}"/>
+    <meta property="og:description" content="{{ project.subtitle }}"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="{{ url_for('portfolio', _external=True,  _scheme='https') + page.path }}"/>
+    <meta property="og:url" content="{{ url_for('portfolio', _external=True,  _scheme='https') + project.path }}"/>
     <meta property="og:image"
-          content="{{ url_for('static', filename = 'images/' + page.banner, _external=True, _scheme='https') }}"/>
+          content="{{ url_for('static', filename = 'images/' + project.banner, _external=True, _scheme='https') }}"/>
 
 {% endblock %}
 
 {% block content %}
 
-    <h2 class="no-bottom-margin">{{ page.title }}</h2>
-    <h5>{{ page.subtitle }}</h5>
+    <h2 class="no-bottom-margin">{{ project.title }}</h2>
+    <h5>{{ project.subtitle }}</h5>
 
     <div class="bottom-margin">
         <img class="banner u-max-full-width" align="middle"
-             src="{{ url_for('static', filename = 'images/' + page.banner) }}">
+             src="{{ url_for('static', filename = 'images/' + project.banner) }}">
     </div>
 
     <div class="value-props row">
         <div class="four columns value-prop">
             <h6><strong>Source Code</strong></h6>
-            {% if page.source_code is not none %}
-                {% if page.source_code.split(' ') is list %}
-                    {% for link in page.source_code.split(' ') %}
-                        {% if page.source_code.startswith('https://github.com') %}
+            {% if project.source_code is not none %}
+                {% if project.source_code.split(' ') is list %}
+                    {% for link in project.source_code.split(' ') %}
+                        {% if project.source_code.startswith('https://github.com') %}
                             <a target="_blank" href="{{ link }}">GitHub</a><br>
                         {% else %}
                             <a target="_blank" href="{{ link }}">Codice sorgente</a><br>
                         {% endif %}
                     {% endfor %}
                 {% else %}
-                    {% if page.source_code.startswith('https://github.com') %}
+                    {% if project.source_code.startswith('https://github.com') %}
                         <a target="_blank" href="{{ link }}">GitHub</a>
                     {% else %}
                         <a target="_blank" href="{{ link }}">Codice sorgente</a>
@@ -55,19 +55,19 @@
         </div>
         <div class="four columns value-prop">
             <h6><strong>License</strong></h6>
-            {% if page.license is not none %}
-                {{ page.license }}
+            {% if project.license is not none %}
+                {{ project.license }}
             {% else %}
                 Non disponibile
             {% endif %}
         </div>
         <div class="four columns value-prop">
             <h6><strong>Website</strong></h6>
-            {% if page.url is not none %}
-                {% if page.url.startswith('https://play.google.com') %}
-                    <a target="_blank" href="{{ page.url }}">Google Play</a>
+            {% if project.url is not none %}
+                {% if project.url.startswith('https://play.google.com') %}
+                    <a target="_blank" href="{{ project.url }}">Google Play</a>
                 {% else %}
-                    <a target="_blank" href="{{ page.url }}">Sito</a>
+                    <a target="_blank" href="{{ project.url }}">Sito</a>
                 {% endif %}
             {% else %}
                 Non disponibile
@@ -75,6 +75,6 @@
         </div>
     </div>
 
-    {{ page.html|safe }}
+    {{ project.html|safe }}
 
 {% endblock content %}

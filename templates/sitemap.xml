@@ -10,7 +10,7 @@
     <!-- Portfolio -->
     <url>
         <loc>{{ url_for('portfolio', _external=True) }}</loc>
-        <lastmod>{{ portoflio_time }}</lastmod>
+        <lastmod>{{ portfolio_time }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
