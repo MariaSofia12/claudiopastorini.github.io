@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <!-- Bio -->
     <url>
         <loc>http://claudiopastorini.github.io/bio/</loc>
-        <lastmod>2016-10-30</lastmod>
+        <lastmod>2016-11-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
+        <image:image>
+            <image:loc>http://claudiopastorini.github.io/static/images/claudio_pastorini_banner_color.jpg</image:loc>
+            <image:title>Claudio Pastorini, sviluppatore Android</image:title>
+            <image:caption>Foto con Claudio Pastorini, sviluppatore Android</image:caption>
+            <image:geo_location>Parco Aldo Moro, Via Mura dei Francesi, 00043 Ciampino RM, Italy</image:geo_location>
+        </image:image>
     </url>
     <!-- Portfolio -->
     <url>
@@ -13,6 +20,91 @@
         <lastmod>2016-11-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/aspo_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Aspo per la trattura della seta</image:caption>
+                <image:title>Aspo per la trattura della seta</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/claudiopastorini_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Claudio Pastorini</image:caption>
+                <image:title>Claudio Pastorini</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/eventide_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Eventide Template per Joomla</image:caption>
+                <image:title>Eventide Template per Joomla</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/exercise_app_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Apps di esercizio</image:caption>
+                <image:title>Apps di esercizio</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/heimdall_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Heimdall Project</image:caption>
+                <image:title>Heimdall Project</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/knighttour_banner.png</image:loc>
+                <image:caption>Banner per il progetto: KnightTour</image:caption>
+                <image:title>KnightTour</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/laziobus_banner.png</image:loc>
+                <image:caption>Banner per il progetto: LazioBus</image:caption>
+                <image:title>LazioBus</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/nottitranquille_banner.png</image:loc>
+                <image:caption>Banner per il progetto: NottiTranquille</image:caption>
+                <image:title>NottiTranquille</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/paline_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Paline Cotral</image:caption>
+                <image:title>Paline Cotral</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/primetime4u_banner.png</image:loc>
+                <image:caption>Banner per il progetto: PRIMETIME4U</image:caption>
+                <image:title>PRIMETIME4U</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/robertorossi_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Roberto Rossi Karaoke</image:caption>
+                <image:title>Roberto Rossi Karaoke</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/telegram_bot_api_banner.png</image:loc>
+                <image:caption>Banner per il progetto: TelegramBotAPI</image:caption>
+                <image:title>TelegramBotAPI</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/workapp_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Workapp</image:caption>
+                <image:title>Workapp</image:title>
+            </image:image>
+        
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/xploration_banner.png</image:loc>
+                <image:caption>Banner per il progetto: XPLORATION READER</image:caption>
+                <image:title>XPLORATION READER</image:title>
+            </image:image>
+        
     </url>
     <!-- Contatti -->
     <url>
@@ -25,6 +117,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/aspo/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/aspo_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Aspo per la trattura della seta</image:caption>
+                <image:title>Aspo per la trattura della seta</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -32,6 +129,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/claudiopastorini/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/claudiopastorini_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Claudio Pastorini</image:caption>
+                <image:title>Claudio Pastorini</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -39,6 +141,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/eventide-template/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/eventide_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Eventide Template per Joomla</image:caption>
+                <image:title>Eventide Template per Joomla</image:title>
+            </image:image>
             <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -46,6 +153,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/exercise-app/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/exercise_app_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Apps di esercizio</image:caption>
+                <image:title>Apps di esercizio</image:title>
+            </image:image>
             <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -53,6 +165,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/heimdall/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/heimdall_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Heimdall Project</image:caption>
+                <image:title>Heimdall Project</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -60,6 +177,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/knighttour/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/knighttour_banner.png</image:loc>
+                <image:caption>Banner per il progetto: KnightTour</image:caption>
+                <image:title>KnightTour</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -67,6 +189,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/laziobus/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/laziobus_banner.png</image:loc>
+                <image:caption>Banner per il progetto: LazioBus</image:caption>
+                <image:title>LazioBus</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -74,6 +201,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/nottitranquille/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/nottitranquille_banner.png</image:loc>
+                <image:caption>Banner per il progetto: NottiTranquille</image:caption>
+                <image:title>NottiTranquille</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -81,6 +213,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/paline/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/paline_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Paline Cotral</image:caption>
+                <image:title>Paline Cotral</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -88,6 +225,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/primetime4u/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/primetime4u_banner.png</image:loc>
+                <image:caption>Banner per il progetto: PRIMETIME4U</image:caption>
+                <image:title>PRIMETIME4U</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -95,6 +237,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/robertorossi/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/robertorossi_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Roberto Rossi Karaoke</image:caption>
+                <image:title>Roberto Rossi Karaoke</image:title>
+            </image:image>
             <lastmod>2016-10-29</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -102,6 +249,11 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/telegram-bot-api/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/telegram_bot_api_banner.png</image:loc>
+                <image:caption>Banner per il progetto: TelegramBotAPI</image:caption>
+                <image:title>TelegramBotAPI</image:title>
+            </image:image>
             <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
@@ -109,13 +261,23 @@
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/workapp/</loc>
-            <lastmod>2016-10-29</lastmod>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/workapp_banner.png</image:loc>
+                <image:caption>Banner per il progetto: Workapp</image:caption>
+                <image:title>Workapp</image:title>
+            </image:image>
+            <lastmod>2016-11-06</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
         </url>
     
         <url>
             <loc>http://claudiopastorini.github.io/portfolio/xploration/</loc>
+            <image:image>
+                <image:loc>http://claudiopastorini.github.io/static/images/xploration_banner.png</image:loc>
+                <image:caption>Banner per il progetto: XPLORATION READER</image:caption>
+                <image:title>XPLORATION READER</image:title>
+            </image:image>
             <lastmod>2016-11-05</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.8</priority>
