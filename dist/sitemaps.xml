@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Bio -->
+    <url>
+        <loc>http://claudiopastorini.github.io/bio/</loc>
+        <lastmod>2016-10-30 21:05:54 +0100</lastmod>
+        <changefreq>montly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Portfolio -->
+    <url>
+        <loc>http://claudiopastorini.github.io/portfolio/</loc>
+        <lastmod></lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Contatti -->
+    <url>
+        <loc>http://claudiopastorini.github.io/contatti/</loc>
+        <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Projects -->
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/aspo/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/claudiopastorini/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/eventide_template/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/exercise_app/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/heimdall/</loc>
+            <lastmod>2016-10-29 09:16:58 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/knighttour/</loc>
+            <lastmod>2016-10-29 09:16:58 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/laziobus/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/nottitranquille/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/paline/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/primetime4u/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/robertorossi/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/telegram_bot_api/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/workapp/</loc>
+            <lastmod>2016-10-29 13:54:38 +0200</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>http://claudiopastorini.github.io/portfolio/xploration/</loc>
+            <lastmod>2016-11-05 12:09:56 +0100</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    
+</urlset>
