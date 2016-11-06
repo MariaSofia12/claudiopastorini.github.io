@@ -9,7 +9,7 @@ date: 1434499200
 
 Al termine del **corso di Mobile Programming** tenuto dal prof. Massimo Regoli durante l'anno
 accedemico **2014/2015**, è stato chiesto di realizzare un'applicazione di un livello superiore
-rispetto a [quelle realizzate durante il corso](/portfolio/exercise_app/) . 
+rispetto a [quelle realizzate durante il corso](/portfolio/exercise-app/) . 
 
 L'app proposta è stata **Workapp**, realizzata con i colleghi *Alessio Moretti*, 
 *Andrea Cerra*, *Federico Vagnoni* e *Paride Casulli*.
