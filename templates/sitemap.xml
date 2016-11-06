@@ -4,7 +4,7 @@
     <url>
         <loc>{{ url_for('bio', _external=True) }}</loc>
         <lastmod>{{ bio_time }}</lastmod>
-        <changefreq>montly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
     <!-- Portfolio -->
