@@ -15,4 +15,10 @@ Mi trovate sui principali social:
     <li class="contacts" data-type="telegram">Telegram: <a href="https://telegram.me/pcx93" target="_blank">pcx93</a></li>
 </ul>
 
-oppure scrivetemi direttamente una e-mail a <a href="mailto:pastorini.claudio@gmail.com">pastorini.claudio@gmail.com</a>.
+oppure scrivetemi direttamente una e-mail a <script language="JavaScript">
+    var username = "pastorini.claudio";
+    var hostname = "gmail.com";
+    var linktext = username + "@" + hostname ;
+    document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+</script>.
+
