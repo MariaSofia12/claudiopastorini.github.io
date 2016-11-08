@@ -36,29 +36,27 @@ def portfolio():
     # Gets portfolio page
     portfolio_page = pages.get('portfolio')
     # Gets all section pages
-    sections = sorted((page for page in pages if "-portfolio" in page.path), key=lambda page: page.meta['title'])
+    sections = sorted((page for page in pages if 'slug' in page.meta), key=lambda page: page.meta['title'])
     # Gets all projects pages
     projects = sorted((page for page in pages if 'date' in page.meta), reverse=True, key=lambda page: page.meta['date'])
     return render_template('portfolio.html', portfolio=portfolio_page, sections=sections, projects=projects)
 
 
-@app.route('/portfolio/<path:project_type>')
-def portfolio_section(project_type):
-    # Gets all section pages
-    sections = [page for page in pages if
-                "-portfolio" in page.path and project_type.replace('/', '') in page.meta.values()]
-    # Gets all projects pages
-    projects = sorted(
-        (page for page in pages if 'date' in page.meta and project_type.replace('/', '') in page.meta.values()),
-        reverse=True, key=lambda page: page.meta['date'])
-    return render_template('portfolio.html', portfolio=None, sections=sections, projects=projects)
-
-
-@app.route('/portfolio/<string:project_type>/<path:project_name>/')
-def project(project_type, project_name):
+@app.route('/portfolio/<path:project_name>/')
+def project(project_name):
     # Gets project page
     project_page = pages.get_or_404(project_name)
-    return render_template('project.html', project=project_page)
+
+    if '/' in project_name:  # It is a project
+        return render_template('project.html', project=project_page)
+    else:  # it is a section with all projects
+        # Gets all section pages
+        sections = [pages.get(project_name)]
+        # Gets all projects pages
+        projects = sorted(
+            (page for page in pages if 'date' in page.meta and project_name in page.meta.values()),
+            reverse=True, key=lambda page: page.meta['date'])
+        return render_template('portfolio.html', portfolio=None, sections=sections, projects=projects)
 
 
 @app.route('/contatti/')
@@ -94,11 +92,11 @@ def sitemaps():
     contatti_time = get_time('contatti')[0]
 
     times_and_pages = list(((time_and_name[0], pages.get(time_and_name[1])) for time_and_name in times_and_names if
-                            '-portfolio' in time_and_name[1]))
+                            '/' not in time_and_name[1]))
 
     # Removes times for not projects
     times_and_projects = list(((time_and_name[0], pages.get(time_and_name[1])) for time_and_name in times_and_names if
-                               '-portfolio' not in time_and_name[1]))
+                               '/' in time_and_name[1]))
 
     sitemap_xml = render_template('sitemap.xml', bio_time=bio_time, portfolio_time=portfolio_time,
                                   contatti_time=contatti_time, times_and_pages=times_and_pages,

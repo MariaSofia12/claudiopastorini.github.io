@@ -30,7 +30,7 @@
     </url>
     {% for time_and_page in times_and_pages %}
         <url>
-            <loc>{{ url_for('portfolio_section', project_type=time_and_page[1].slug, _external=True, _scheme='https') }}</loc>
+            <loc>{{ url_for('project', project_name=time_and_page[1].slug, _external=True, _scheme='https') }}</loc>
             <lastmod>{{ time_and_page[0] }}</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1</priority>
@@ -55,7 +55,7 @@
     <!-- Projects -->
     {% for time_and_project in times_and_projects %}
         <url>
-            <loc>{{ url_for('project', project_type=time_and_project[1].type, project_name=time_and_project[1].path, _external=True, _scheme='https') }}</loc>
+            <loc>{{ url_for('project', project_name=time_and_project[1].path, _external=True, _scheme='https') }}</loc>
             <image:image>
                 <image:loc>{{ url_for('static', filename = 'images/' + time_and_project[1].banner, _external=True, _scheme='https') }}</image:loc>
                 <image:caption>Banner per il progetto: {{ time_and_project[1].title }}</image:caption>

@@ -29,7 +29,7 @@
             "@type": "ListItem",
             "position": 2,
             "item": {
-              "@id": "{{ url_for('portfolio_section', project_type=sections[0].slug, _external=True, _scheme='https') }}",
+              "@id": "{{ url_for('project', project_name=sections[0].slug, _external=True, _scheme='https') }}",
               "name": "{{ sections[0].title }}"
             }
           }
@@ -51,7 +51,7 @@
         <meta property="og:title" content="{{ sections[0].title }}"/>
         <meta property="og:description" content="{{ sections[0].slug.html|striptags }}"/>
         <meta property="og:url"
-              content="{{ url_for('portfolio_section', project_type=sections[0].slug, _external=True, _scheme='https') }}"/>
+              content="{{ url_for('project', project_name=sections[0].slug, _external=True, _scheme='https') }}"/>
     {% endif %}
     <meta property="og:type" content="article"/>
 
@@ -71,7 +71,7 @@
 
         <div class="portfolio-section">
         <h6 class="portfolio-title">{{ section.title }} <a
-                href="{{ url_for('portfolio_section', project_type=section.slug, _external=True) }}"
+                href="{{ url_for('project', project_name=section.slug, _external=True) }}"
                 aria-label="Vai alla sezione '{{ section.title }}'" class="sr hsl">{{ section.title }}</a></h6>
 
         {{ section.html|safe }}
@@ -82,7 +82,7 @@
             {% else %}
                 <div class="portfolio left-column">
             {% endif %}
-        <a href="{{ url_for('project', project_type=project.type, project_name=project.path) }}">
+        <a href="{{ url_for('project', project_name=project.path) }}">
             <div class="portfolio-image-wrapper">
                 <img src="{{ url_for('static', filename = 'images/thumb/' + project.banner) }}"
                      alt="Banner per il progetto: {{ project.title }}" title="{{ project.title }}">
