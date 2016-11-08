@@ -18,7 +18,16 @@
     <!-- JSON-LD metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     {% block jsonld %}
-        
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "name": "Claudio Pastorini",
+              "alternateName": "Claudio Pastorini, sviluppatore Android.",
+              "url": "https://claudiopastorini.github.io/"
+            }
+
+        </script>
     {% endblock jsonld %}
 
     <!-- Open Graph metadata
