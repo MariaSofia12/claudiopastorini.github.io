@@ -2,33 +2,77 @@
 
 {% block meta %}
 
-    <title>{{ portfolio.title }} - Claudio Pastorini</title>
-    <meta name="description"
-          content="{{ portfolio.subtitle }}">
+    {% if portfolio is not none %}
+        <title>{{ portfolio.title }} - Claudio Pastorini</title>
+        <meta name="description" content="{{ portfolio.subtitle }}">
+    {% else %}
+        <title>{{ sections[0].title }} - Claudio Pastorini</title>
+        <meta name="description" content="{{ sections[0].html|striptags }}">
+    {% endif %}
 
+{% endblock %}
+
+{% block jsonld %}
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ url_for('portfolio', _external=True, _scheme='https') }}",
+              "name": "Portfolio"
+            }
+          }{% if portfolio is none %}
+                ,{
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "{{ url_for('portfolio_section', project_type=sections[0].slug, _external=True, _scheme='https') }}",
+              "name": "{{ sections[0].title }}"
+            }
+          }
+            {% endif %}]
+        }
+
+    </script>
 {% endblock %}
 
 {% block ogmeta %}
 
     {{ super() }}
 
-    <meta property="og:title" content="{{ portfolio.title }}"/>
-    <meta property="og:description" content="{{ portfolio.subtitle }}"/>
+    {% if portfolio is not none %}
+        <meta property="og:title" content="{{ portfolio.title }}"/>
+        <meta property="og:description" content="{{ portfolio.subtitle }}"/>
+        <meta property="og:url" content="{{ url_for('portfolio', _external=True, _scheme='https') }}"/>
+    {% else %}
+        <meta property="og:title" content="{{ sections[0].title }}"/>
+        <meta property="og:description" content="{{ sections[0].slug.html|striptags }}"/>
+        <meta property="og:url"
+              content="{{ url_for('portfolio_section', project_type=sections[0].slug, _external=True, _scheme='https') }}"/>
+    {% endif %}
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="{{ url_for('portfolio', _external=True, _scheme='https') }}"/>
 
 {% endblock %}
 
 {% block content %}
 
-    <h5>{{ portfolio.subtitle }}</h5>
+    {% if portfolio is not none %}
 
-    {{ portfolio.html|safe }}
+        <h5>{{ portfolio.subtitle }}</h5>
+
+        {{ portfolio.html|safe }}
+
+    {% endif %}
 
     {% for section in sections %}
 
         <div class="portfolio-section">
-        <h6 class="portfolio-title">{{ section.title }}</h6>
+        <h6 class="portfolio-title">{{ section.title }} <a
+                href="{{ url_for('portfolio_section', project_type=section.slug, _external=True) }}"
+                aria-label="Vai alla sezione '{{ section.title }}'" class="sr hsl">{{ section.title }}</a></h6>
 
         {{ section.html|safe }}
 
@@ -38,9 +82,9 @@
             {% else %}
                 <div class="portfolio left-column">
             {% endif %}
-        <a href="{{ url_for('project', path=project.path) }}">
+        <a href="{{ url_for('project', project_type=project.type, project_name=project.path) }}">
             <div class="portfolio-image-wrapper">
-                <img src="{{ url_for('static', filename = 'images/' + project.banner) }}"
+                <img src="{{ url_for('static', filename = 'images/thumb/' + project.banner) }}"
                      alt="Banner per il progetto: {{ project.title }}" title="{{ project.title }}">
             </div>
         </a>

@@ -1,6 +1,6 @@
 title: PRIMETIME4U
 subtitle: The only app that allow you to plop down to the sofa and simply enjoy a movie
-type: android_app
+type: android
 banner: primetime4u_banner.png
 url: 
 source_code: https://github.com/PRIMETIME4U/PRIMETIME4U-baseclient https://github.com/PRIMETIME4U/PRIMETIME4U-server

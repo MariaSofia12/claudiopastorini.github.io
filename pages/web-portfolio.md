@@ -1,5 +1,5 @@
 title: Web apps
-slug: web_app
+slug: web
 
 **Non amo sviluppare per il web** (sono più un tipo da **backend**, ecco):
 io e l'HTML non riusciamo a stare insieme per troppe ore ma per necessità 

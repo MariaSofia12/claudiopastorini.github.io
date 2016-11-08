@@ -1,6 +1,6 @@
 title: Workapp
 subtitle: Progetto finale per il corso di Mobile Programming
-type: android_app
+type: android
 banner: workapp_banner.png
 url:
 source_code: https://github.com/ragnarokmp/WorkApp

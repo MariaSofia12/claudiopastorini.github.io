@@ -1,6 +1,6 @@
 title: XPLORATION READER
 subtitle: App Open Source per la visualizzazione dei dati raccolti da Chronos
-type: android_app
+type: android
 banner: xploration_banner.png
 url:
 source_code: https://github.com/SpaceAppsXploration/android-xpreader

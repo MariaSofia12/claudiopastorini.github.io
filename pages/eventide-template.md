@@ -1,6 +1,6 @@
 title: Eventide Template per Joomla
 subtitle: Un template moderno per Joomla per ogni tipo di evento e conferenza 
-type: web_app
+type: web
 banner: eventide_banner.png
 url:
 source_code: https://github.com/claudiopastorini/EventideJoomlaTemplate

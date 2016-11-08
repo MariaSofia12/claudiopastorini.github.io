@@ -7,6 +7,24 @@
 
 {% endblock %}
 
+{% block jsonld %}
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ url_for('contatti', _external=True, _scheme='https') }}",
+              "name": "Contatti"
+            }
+          }]
+        }
+
+    </script>
+{% endblock %}
+
 {% block ogmeta %}
 
     {{ super() }}
@@ -15,7 +33,7 @@
     <meta property="og:description" content="{{ contatti.subtitle }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:type" content="profile">
-    <meta property="og:url" content="{{ url_for('contatti', _external=True) }}"/>
+    <meta property="og:url" content="{{ url_for('contatti', _external=True, _scheme='https') }}"/>
     <meta property="og:image"
           content="{{ url_for('static', filename = 'signature/rounded_profile.png', _external=True, _scheme='https') }}">
     <meta property="og:image:width" content="160">

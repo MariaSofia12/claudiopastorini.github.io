@@ -1,6 +1,6 @@
 title: Claudio Pastorini
 subtitle: Il mio sito creato da zero 
-type: web_app
+type: web
 banner: claudiopastorini_banner.png
 url: https://claudiopastorini.github.io
 source_code: https://github.com/claudiopastorini/claudiopastorini.github.io 

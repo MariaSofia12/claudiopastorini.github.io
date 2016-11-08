@@ -1,5 +1,5 @@
 title: Android apps
-slug: android_app
+slug: android
 
 Sviluppo app per **Android dal 2013**, quindi mi sento **padrone della 
 piattaforma** e sono sempre alla ricerca di **nuovi** pattern architetturali 

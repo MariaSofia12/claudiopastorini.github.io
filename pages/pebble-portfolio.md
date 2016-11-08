@@ -1,5 +1,5 @@
 title: Pebble apps
-slug: pebble_app
+slug: pebble
 
 La parola **wearable** è sulla bocca di tutti, ma questi device ancora 
 non sono sul corpo di tutti.

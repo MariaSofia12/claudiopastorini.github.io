@@ -1,6 +1,6 @@
 title: TelegramBotAPI
 subtitle: Client Python per creare facilmente bot per Telegram
-type: web_app
+type: web
 banner: telegram_bot_api_banner.png
 url:
 source_code: https://github.com/claudiopastorini/TelegramBotAPI 

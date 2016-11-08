@@ -8,8 +8,9 @@
     <meta charset="utf-8">
 
     {% block meta %}
-        <title>Claudio Pastorini, sviluppatore Android.</title>
-        <meta name="description" content="Claudio Pastorini sito personale con bio, portfolio e contatti.">
+        <title>Claudio Pastorini</title>
+        <meta name="description"
+              content="Claudio Pastorini, sviluppatore Android. Sito personale con bio, portfolio e contatti.">
     {% endblock %}
 
     <meta name="author" content="Claudio Pastorini">
@@ -38,7 +39,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/claudiopastorini.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/claudiopastorini.css') }}">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -74,13 +75,13 @@
             <div class="container">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/bio">Bio</a>
+                        <a class="navbar-link" href="{{ url_for('bio') }}">Bio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/portfolio">Portfolio</a>
+                        <a class="navbar-link" href="{{ url_for('portfolio') }}">Portfolio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/contatti">Contatti</a>
+                        <a class="navbar-link" href="{{ url_for('contatti') }}">Contatti</a>
                     </li>
                 </ul>
             </div>

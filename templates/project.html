@@ -7,6 +7,32 @@
 
 {% endblock %}
 
+{% block jsonld %}
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ url_for('portfolio', _external=True, _scheme='https') }}",
+              "name": "Portfolio"
+            }
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "{{ url_for('project', project_type=project.type, project_name=project.path, _external=True, _scheme='https') }}",
+              "name": "{{ project.title }}",
+              "image": "{{ url_for('static', filename = 'images/' + project.banner, _external=True, _scheme='https') }}"
+            }
+          }]
+        }
+
+    </script>
+{% endblock %}
+
 {% block ogmeta %}
 
     {{ super() }}
@@ -16,7 +42,7 @@
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="{{ url_for('portfolio', _external=True,  _scheme='https') + project.path }}"/>
     <meta property="og:image"
-          content="{{ url_for('static', filename = 'images/' + project.banner, _external=True, _scheme='https') }}"/>
+          content="{{ url_for('static', filename = 'images/original/' + project.banner, _external=True, _scheme='https') }}"/>
 
 {% endblock %}
 

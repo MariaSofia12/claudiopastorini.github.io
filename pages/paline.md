@@ -1,6 +1,6 @@
 title: Paline Cotral
 subtitle: Watchapp per i pendolari Cotral
-type: pebble_app
+type: pebble
 banner: paline_banner.png
 url: 
 source_code: https://github.com/claudiopastorini/PalineCotral
