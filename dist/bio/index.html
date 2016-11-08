@@ -20,8 +20,23 @@
     <!-- JSON-LD metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     
-        
-    
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://claudiopastorini.github.io/bio/",
+              "name": "Bio",
+              "image": "https://claudiopastorini.github.io/static/images/claudio_pastorini_banner_color.jpg"
+            }
+          }]
+        }
+
+    </script>
+
 
     <!-- Open Graph metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,7 +51,7 @@
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://claudiopastorini.github.io/bio/"/>
     <meta property="og:image"
-          content="https://claudiopastorini.github.io/static/images/claudio_pastorini_banner_color.jpg"/>
+          content="https://claudiopastorini.github.io/static/images/original/claudio_pastorini_banner_color.jpg"/>
     <meta property="og:image:width" content="2340">
     <meta property="og:image:height" content="1276">
     <meta property="og:image:type" content="image/jpg">
@@ -55,7 +70,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="/static/css/normalize.min.css">
     <link rel="stylesheet" href="/static/css/skeleton.min.css">
-    <link rel="stylesheet" href="/static/css/claudiopastorini.min.css">
+    <link rel="stylesheet" href="/static/css/claudiopastorini.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -91,13 +106,13 @@
             <div class="container">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/bio">Bio</a>
+                        <a class="navbar-link" href="/bio/">Bio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/portfolio">Portfolio</a>
+                        <a class="navbar-link" href="/portfolio/">Portfolio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/contatti">Contatti</a>
+                        <a class="navbar-link" href="/contatti/">Contatti</a>
                     </li>
                 </ul>
             </div>

@@ -19,8 +19,22 @@
     <!-- JSON-LD metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     
-        
-    
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://claudiopastorini.github.io/contatti/",
+              "name": "Contatti"
+            }
+          }]
+        }
+
+    </script>
+
 
     <!-- Open Graph metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,7 +48,7 @@
     <meta property="og:description" content="Contattatemi, sarà un piacere rispondere"/>
     <meta property="og:type" content="article"/>
     <meta property="og:type" content="profile">
-    <meta property="og:url" content="http://claudiopastorini.github.io/contatti/"/>
+    <meta property="og:url" content="https://claudiopastorini.github.io/contatti/"/>
     <meta property="og:image"
           content="https://claudiopastorini.github.io/static/signature/rounded_profile.png">
     <meta property="og:image:width" content="160">
@@ -62,7 +76,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="/static/css/normalize.min.css">
     <link rel="stylesheet" href="/static/css/skeleton.min.css">
-    <link rel="stylesheet" href="/static/css/claudiopastorini.min.css">
+    <link rel="stylesheet" href="/static/css/claudiopastorini.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -98,13 +112,13 @@
             <div class="container">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/bio">Bio</a>
+                        <a class="navbar-link" href="/bio/">Bio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/portfolio">Portfolio</a>
+                        <a class="navbar-link" href="/portfolio/">Portfolio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/contatti">Contatti</a>
+                        <a class="navbar-link" href="/contatti/">Contatti</a>
                     </li>
                 </ul>
             </div>
@@ -129,7 +143,12 @@ o <code>pcx93</code>, invece in ambito developer come <code>claudiopastorini</co
     <li class="contacts" data-type="telegram">Telegram: <a href="https://telegram.me/pcx93" target="_blank">pcx93</a></li>
 </ul>
 
-<p>oppure scrivetemi direttamente una e-mail a <a href="mailto:pastorini.claudio@gmail.com">pastorini.claudio@gmail.com</a>.</p>
+<p>oppure scrivetemi direttamente una e-mail a <script language="JavaScript">
+    var username = "pastorini.claudio";
+    var hostname = "gmail.com";
+    var linktext = username + "@" + hostname ;
+    document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+</script>.</p>
 
 
 

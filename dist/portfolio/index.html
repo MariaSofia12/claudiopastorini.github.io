@@ -9,9 +9,10 @@
 
     
 
-    <title>Portfolio - Claudio Pastorini</title>
-    <meta name="description"
-          content="I miei lavori">
+    
+        <title>Portfolio - Claudio Pastorini</title>
+        <meta name="description" content="I miei lavori">
+    
 
 
 
@@ -20,8 +21,22 @@
     <!-- JSON-LD metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     
-        
-    
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://claudiopastorini.github.io/portfolio/",
+              "name": "Portfolio"
+            }
+          }]
+        }
+
+    </script>
+
 
     <!-- Open Graph metadata
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,10 +46,12 @@
         <meta property="og:site_name" content="Claudio Pastorini"/>
     
 
-    <meta property="og:title" content="Portfolio"/>
-    <meta property="og:description" content="I miei lavori"/>
+    
+        <meta property="og:title" content="Portfolio"/>
+        <meta property="og:description" content="I miei lavori"/>
+        <meta property="og:url" content="https://claudiopastorini.github.io/portfolio/"/>
+    
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="https://claudiopastorini.github.io/portfolio/"/>
 
 
 
@@ -50,7 +67,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="/static/css/normalize.min.css">
     <link rel="stylesheet" href="/static/css/skeleton.min.css">
-    <link rel="stylesheet" href="/static/css/claudiopastorini.min.css">
+    <link rel="stylesheet" href="/static/css/claudiopastorini.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -86,13 +103,13 @@
             <div class="container">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/bio">Bio</a>
+                        <a class="navbar-link" href="/bio/">Bio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/portfolio">Portfolio</a>
+                        <a class="navbar-link" href="/portfolio/">Portfolio</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/contatti">Contatti</a>
+                        <a class="navbar-link" href="/contatti/">Contatti</a>
                     </li>
                 </ul>
             </div>
@@ -104,9 +121,11 @@
 
             
 
-    <h5>I miei lavori</h5>
+    
 
-    <p><strong>Sviluppo principalmente per Android</strong> ma negli anni ho utilizzato anche 
+        <h5>I miei lavori</h5>
+
+        <p><strong>Sviluppo principalmente per Android</strong> ma negli anni ho utilizzato anche 
 altre piattaforme o linguaggi: mi adatto alla situazione che devo affrontare 
 cercando di non demordere. I progetti qui presentati sono tutti lavori 
 <strong>realizzati da me (o in collaborazione)</strong> e comprendono <strong>anche progetti 
@@ -114,8 +133,12 @@ universitari</strong>.</p>
 
     
 
+    
+
         <div class="portfolio-section">
-        <h6 class="portfolio-title">Android apps</h6>
+        <h6 class="portfolio-title">Android apps <a
+                href="http://claudiopastorini.github.io/portfolio/android"
+                aria-label="Vai alla sezione 'Android apps'" class="sr hsl">Android apps</a></h6>
 
         <p>Sviluppo app per <strong>Android dal 2013</strong>, quindi mi sento <strong>padrone della 
 piattaforma</strong> e sono sempre alla ricerca di <strong>nuovi</strong> pattern architetturali 
@@ -127,9 +150,9 @@ e tecniche <strong>per migliorarmi sempre di più</strong>. Da sempre il mio obi
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/xploration/">
+        <a href="/portfolio/android/xploration/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/xploration_banner.png"
+                <img src="/static/images/thumb/xploration_banner.png"
                      alt="Banner per il progetto: XPLORATION READER" title="XPLORATION READER">
             </div>
         </a>
@@ -138,9 +161,9 @@ e tecniche <strong>per migliorarmi sempre di più</strong>. Da sempre il mio obi
             
                 <div class="portfolio right-column">
             
-        <a href="/portfolio/workapp/">
+        <a href="/portfolio/android/workapp/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/workapp_banner.png"
+                <img src="/static/images/thumb/workapp_banner.png"
                      alt="Banner per il progetto: Workapp" title="Workapp">
             </div>
         </a>
@@ -149,9 +172,9 @@ e tecniche <strong>per migliorarmi sempre di più</strong>. Da sempre il mio obi
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/primetime4u/">
+        <a href="/portfolio/android/primetime4u/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/primetime4u_banner.png"
+                <img src="/static/images/thumb/primetime4u_banner.png"
                      alt="Banner per il progetto: PRIMETIME4U" title="PRIMETIME4U">
             </div>
         </a>
@@ -160,9 +183,9 @@ e tecniche <strong>per migliorarmi sempre di più</strong>. Da sempre il mio obi
             
                 <div class="portfolio right-column">
             
-        <a href="/portfolio/laziobus/">
+        <a href="/portfolio/android/laziobus/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/laziobus_banner.png"
+                <img src="/static/images/thumb/laziobus_banner.png"
                      alt="Banner per il progetto: LazioBus" title="LazioBus">
             </div>
         </a>
@@ -171,9 +194,9 @@ e tecniche <strong>per migliorarmi sempre di più</strong>. Da sempre il mio obi
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/robertorossi/">
+        <a href="/portfolio/android/robertorossi/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/robertorossi_banner.png"
+                <img src="/static/images/thumb/robertorossi_banner.png"
                      alt="Banner per il progetto: Roberto Rossi Karaoke" title="Roberto Rossi Karaoke">
             </div>
         </a>
@@ -184,7 +207,9 @@ e tecniche <strong>per migliorarmi sempre di più</strong>. Da sempre il mio obi
     
 
         <div class="portfolio-section">
-        <h6 class="portfolio-title">DIY</h6>
+        <h6 class="portfolio-title">DIY <a
+                href="http://claudiopastorini.github.io/portfolio/diy"
+                aria-label="Vai alla sezione 'DIY'" class="sr hsl">DIY</a></h6>
 
         <p>Non sapevo come catalogare questo tipo di lavori che comportano l'utilizzo 
 di nuove tecnologie come <strong>Arduino</strong>, <strong>Raspberry Pi</strong> e in generale 
@@ -200,9 +225,9 @@ creare piccole apparecchiature, o anche semplici calcolatori elettronici.  </p>
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/aspo/">
+        <a href="/portfolio/diy/aspo/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/aspo_banner.png"
+                <img src="/static/images/thumb/aspo_banner.png"
                      alt="Banner per il progetto: Aspo per la trattura della seta" title="Aspo per la trattura della seta">
             </div>
         </a>
@@ -213,7 +238,9 @@ creare piccole apparecchiature, o anche semplici calcolatori elettronici.  </p>
     
 
         <div class="portfolio-section">
-        <h6 class="portfolio-title">Pebble apps</h6>
+        <h6 class="portfolio-title">Pebble apps <a
+                href="http://claudiopastorini.github.io/portfolio/pebble"
+                aria-label="Vai alla sezione 'Pebble apps'" class="sr hsl">Pebble apps</a></h6>
 
         <p>La parola <strong>wearable</strong> è sulla bocca di tutti, ma questi device ancora 
 non sono sul corpo di tutti.</p>
@@ -227,9 +254,9 @@ iniziato a sviluppare su questo fantastico device.</p>
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/paline/">
+        <a href="/portfolio/pebble/paline/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/paline_banner.png"
+                <img src="/static/images/thumb/paline_banner.png"
                      alt="Banner per il progetto: Paline Cotral" title="Paline Cotral">
             </div>
         </a>
@@ -240,7 +267,9 @@ iniziato a sviluppare su questo fantastico device.</p>
     
 
         <div class="portfolio-section">
-        <h6 class="portfolio-title">Progetti universitari</h6>
+        <h6 class="portfolio-title">Progetti universitari <a
+                href="http://claudiopastorini.github.io/portfolio/university"
+                aria-label="Vai alla sezione 'Progetti universitari'" class="sr hsl">Progetti universitari</a></h6>
 
         <p>Durante il mio percorso accademico di laurea trieannale in <strong>Ingegneria 
 Informatica - Sistemi Software e web</strong> all'Università di <strong>Roma Tor Vergata</strong>, 
@@ -254,9 +283,9 @@ tecnologie utili al lavoro di gruppo, come <strong>Git</strong>, <strong>GitHub<
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/heimdall/">
+        <a href="/portfolio/university/heimdall/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/heimdall_banner.png"
+                <img src="/static/images/thumb/heimdall_banner.png"
                      alt="Banner per il progetto: Heimdall Project" title="Heimdall Project">
             </div>
         </a>
@@ -265,9 +294,9 @@ tecnologie utili al lavoro di gruppo, come <strong>Git</strong>, <strong>GitHub<
             
                 <div class="portfolio right-column">
             
-        <a href="/portfolio/exercise-app/">
+        <a href="/portfolio/university/exercise-app/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/exercise_app_banner.png"
+                <img src="/static/images/thumb/exercise_app_banner.png"
                      alt="Banner per il progetto: Apps di esercizio" title="Apps di esercizio">
             </div>
         </a>
@@ -276,9 +305,9 @@ tecnologie utili al lavoro di gruppo, come <strong>Git</strong>, <strong>GitHub<
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/nottitranquille/">
+        <a href="/portfolio/university/nottitranquille/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/nottitranquille_banner.png"
+                <img src="/static/images/thumb/nottitranquille_banner.png"
                      alt="Banner per il progetto: NottiTranquille" title="NottiTranquille">
             </div>
         </a>
@@ -287,9 +316,9 @@ tecnologie utili al lavoro di gruppo, come <strong>Git</strong>, <strong>GitHub<
             
                 <div class="portfolio right-column">
             
-        <a href="/portfolio/knighttour/">
+        <a href="/portfolio/university/knighttour/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/knighttour_banner.png"
+                <img src="/static/images/thumb/knighttour_banner.png"
                      alt="Banner per il progetto: KnightTour" title="KnightTour">
             </div>
         </a>
@@ -300,7 +329,9 @@ tecnologie utili al lavoro di gruppo, come <strong>Git</strong>, <strong>GitHub<
     
 
         <div class="portfolio-section">
-        <h6 class="portfolio-title">Web apps</h6>
+        <h6 class="portfolio-title">Web apps <a
+                href="http://claudiopastorini.github.io/portfolio/web"
+                aria-label="Vai alla sezione 'Web apps'" class="sr hsl">Web apps</a></h6>
 
         <p><strong>Non amo sviluppare per il web</strong> (sono più un tipo da <strong>backend</strong>, ecco):
 io e l'HTML non riusciamo a stare insieme per troppe ore ma per necessità 
@@ -311,9 +342,9 @@ mi sono rimboccato le maniche e ho approfondito anche un po' di <em>HTML</em>,
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/eventide-template/">
+        <a href="/portfolio/web/eventide-template/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/eventide_banner.png"
+                <img src="/static/images/thumb/eventide_banner.png"
                      alt="Banner per il progetto: Eventide Template per Joomla" title="Eventide Template per Joomla">
             </div>
         </a>
@@ -322,9 +353,9 @@ mi sono rimboccato le maniche e ho approfondito anche un po' di <em>HTML</em>,
             
                 <div class="portfolio right-column">
             
-        <a href="/portfolio/claudiopastorini/">
+        <a href="/portfolio/web/claudiopastorini/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/claudiopastorini_banner.png"
+                <img src="/static/images/thumb/claudiopastorini_banner.png"
                      alt="Banner per il progetto: Claudio Pastorini" title="Claudio Pastorini">
             </div>
         </a>
@@ -333,9 +364,9 @@ mi sono rimboccato le maniche e ho approfondito anche un po' di <em>HTML</em>,
             
                 <div class="portfolio left-column">
             
-        <a href="/portfolio/telegram-bot-api/">
+        <a href="/portfolio/web/telegram-bot-api/">
             <div class="portfolio-image-wrapper">
-                <img src="/static/images/telegram_bot_api_banner.png"
+                <img src="/static/images/thumb/telegram_bot_api_banner.png"
                      alt="Banner per il progetto: TelegramBotAPI" title="TelegramBotAPI">
             </div>
         </a>
