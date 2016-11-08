@@ -71,7 +71,7 @@
 
         <div class="portfolio-section">
         <h6 class="portfolio-title">{{ section.title }} <a
-                href="{{ url_for('project', project_name=section.slug, _external=True) }}"
+                href="{{ url_for('project', project_name=section.slug) }}"
                 aria-label="Vai alla sezione '{{ section.title }}'" class="sr hsl">{{ section.title }}</a></h6>
 
         {{ section.html|safe }}

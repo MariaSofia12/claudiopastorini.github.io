@@ -1,5 +1,5 @@
 title: Portfolio
-subtitle: I miei lavori
+subtitle: App Android, siti web e molto altro
 banner:
 
 **Sviluppo principalmente per Android** ma negli anni ho utilizzato anche 

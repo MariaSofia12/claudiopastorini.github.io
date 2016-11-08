@@ -23,5 +23,5 @@ di [Matthew Hartman](http://matthewhartman.com.au/) ho realizzato **un template*
 po' da lavorarci ma lo sto giù utilizzando sul sito [**Inventa**](http://www.associazionesinergie.it/inventa), 
 iniziativa dell'[Associazione di Promozione sociale **Sinergie**](http://www.associazionesinergie.it/) 
 con cui collaboro e con cui ho partecipato alla [**Maker Faire** di Roma](http://www.makerfairerome.eu/it/) 
-del 2016 portando un [Aspo](/portfolio/aspo/) per la trattura della 
+del 2016 portando un [Aspo](/portfolio/diy/aspo/) per la trattura della 
 seta.

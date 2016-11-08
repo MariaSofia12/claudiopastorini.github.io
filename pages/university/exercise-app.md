@@ -31,4 +31,4 @@ conoscenza dei codici catastali
 numero romano in un numero arabo e viceversa, creando un **componente 
 visuale custom**
 
-L'app [WorkApp](/portfolio/workapp/) è stata realizzata come progetto finale di gruppo.
+L'app [WorkApp](/portfolio/android/workapp/) è stata realizzata come progetto finale di gruppo.
