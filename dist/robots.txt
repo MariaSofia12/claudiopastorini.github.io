@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /signature/
+Sitemap: http://claudiopastorini.github.io/sitemaps.xml
