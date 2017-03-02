@@ -2,7 +2,7 @@ title: Roberto Rossi Karaoke
 subtitle: L'app ufficiale per le serate karaoke di Roberto Rossi!
 type: android
 banner: robertorossi_banner.png
-url: https://play.google.com/store/apps/details?id=com.scripto.robertorossikaraoke
+url:
 source_code:
 license:
 date: 1383868800
