@@ -9,7 +9,7 @@ This is my personal site, hosted on [GitHub Pages](https://pages.github.com/) cr
 * [Flask Flat Pages](https://github.com/Flask-FlatPages/Flask-FlatPages) - Provides flat static pages to a Flask application
 * [Skelethon](https://github.com/dhg/Skeleton) - Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development
 
-##License
+## License
     The MIT License (MIT)
     
     Copyright (c) 2016 Claudio Pastorini
