@@ -4,6 +4,7 @@ import subprocess
 from flask import Flask, render_template
 from flask import make_response
 from flask import redirect
+from flask import request
 from flask import url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
@@ -19,16 +20,19 @@ pages = FlatPages(app)
 freezer = Freezer(app)
 
 
+@app.route('/bio/')
+@app.route('/en/bio/')
+@app.route('/it/bio/')
+@app.route('/fr/bio/')
+def bio():
+    # Gets bio page
+    bio_page = pages.get(request.path[1:-1])
+    return render_template('bio.html', bio=bio_page)
+
+
 @app.route('/')
 def index():
     return redirect("bio", code=302)
-
-
-@app.route('/bio/')
-def bio():
-    # Gets bio page
-    bio_page = pages.get('bio')
-    return render_template('bio.html', bio=bio_page)
 
 
 @app.route('/portfolio/')
