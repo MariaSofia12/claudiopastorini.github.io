@@ -1,13 +1,11 @@
 -title: LazioBus
--subtitle: L'app (non ufficiale) più amata dai pendolari Cotral
+-subtitle: L'app (pas officielle) plus aimée par les banlieusard qui voyagent avec les bus Cotral.
 -type: android
 -banner: laziobus_banner.png
 -url:
 -source_code:
 -license:
 -date: 1402444800
-
-L'app (pas officielle) plus aimée par les banlieusard qui voyagent avec les bus Cotral.
 
 Je suis un **développeur** qui fait la navette, donc si un service n'existe pas
 (ou il est de mauvaise qualité), je peux le créer.
@@ -27,7 +25,7 @@ nous avons atteint environ 15k utilisateurs dans les 3 systèmes d'exploitation:
 *Android* (dont je me suis occupé), *iOS* et *Windows Phone*.
 
 **Aujourd'hui** l'app a été **retiré de tous les stores** à cause des problèmes de
-compatibilité avec les nouvelles versions d'Android: pour l'adaptation, on aurait eu
+compatibilité avec les nouvelles versions d'Android: pour la mise à jour, on aurait eu
 un travail que nous ne pouvions pas soutenir pendant nos études universitaires.
 
 Toutefois, étant donné le succès, peut-être que vous aurez bientôt une nouvelle
