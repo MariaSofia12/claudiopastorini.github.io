@@ -1,5 +1,5 @@
 title: Roberto Rossi Karaoke
-subtitle: L'app ufficiale per le serate karaoke di Roberto Rossi!
+subtitle: L'app officielle pour les soirées de Roberto Rossi!
 type: android
 banner: robertorossi_banner.png
 url:
@@ -7,14 +7,15 @@ source_code:
 license:
 date: 1383868800
 
-Questa è stata la **mia prima vera applicazione** realizzata per la 
-**gestione delle serate di karaoke** di Roberto Rossi, showman di Frosinone.
+*Roberto Rossi Karaoke* a été **ma première véritable application** développée pour
+**la gestion des soirées du karaoke organisées par Roberto Rossi**, un showman de la ville de Frosinone.
 
-L'applicazione permette alle persone presenti alla serata karaoke di **prenotarsi**, scegliendo la canzone e richiedendo la tonalità desiderata.
-Inoltre, l'app contiene una sezione in cui è possibile **chattare** con gli altri 
-partecipanti, una sezione per essere sempre aggiornati sulle **serate future** e 
-non mancano la **lista delle canzoni prenotate** e la **lista delle canzoni disponibili**.
+L'app permet à tous les présents à la soirée de se réserver pour le karaoke,
+en choisissant la chanson et en demandant la tonalité souhaitée.
+En outre, l'application contient une section où il y a la possibilité de **chatter** avec d'autres participants,
+une section pour les mises à jour régulières en ce qui concerne les **soirées à venir**
+et il y a la **liste des chansons qui ont été reservé** et la **liste des chansons disponibles**.
 
-Nonostante la mia inesperienza di allora, mi ritengo 
-comunque **soddisfatto del lavoro**, che risulta **ancora gradevole** all'utilizzo e alla vista, anche se la grafica non 
-segue il gusto attuale di tipo [Material Design](https://material.google.com/) ma l'*Holo Theme*.
+En dépit de mon manque d'expérience à cette période là, je suis toujours **satisfait de mon travail**,
+qui est **encore agréable** à l'utilisation et à la vue aussi, même si la graphique ne respecte pas
+les règles actuelles du [Material Design](https://material.google.com/), mais le *thème Holo*.
