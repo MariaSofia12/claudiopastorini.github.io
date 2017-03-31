@@ -19,7 +19,7 @@ par des milestones, après chacune des quelles, les groupes étaient jugés
 par des professeurs et des spécialistes en la matière.
 
 Avec mes collègues *Dorel Coman*, *Giovanni Colonna* et *Marius Dragos Ionita*,
-j'ai realisé **mon ideée**: PRIMETIME4U. 
+j'ai realisé **mon idée**: PRIMETIME4U. 
 
 Ça est une app qui aide à **choisir un film à regarder la soirée à la télévision 
 selon son propre goût**, à travers un **feedback** après chaque vision. 
