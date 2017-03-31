@@ -18,4 +18,4 @@ et il y a la **liste des chansons qui ont été reservé** et la **liste des cha
 
 En dépit de mon manque d'expérience à cette période là, je suis toujours **satisfait de mon travail**,
 qui est **encore agréable** à l'utilisation et à la vue aussi, même si la graphique ne respecte pas
-les règles actuelles du [Material Design](https://material.google.com/), mais le *thème Holo*.
+les règles actuelles du [Material Design](https://material.google.com/), mais du *thème Holo*.
